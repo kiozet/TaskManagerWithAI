@@ -7,6 +7,7 @@ def createTable(connection: sqlite3.Connection, cursor: sqlite3.Cursor):
     """Create table func, args: connection: sqlite3.Connection, cursor: sqlite3.Cursor from your
     sqlite3 db"""
 
+
     cursor.execute(
         """
     CREATE TABLE IF NOT EXISTS Users (
@@ -20,6 +21,10 @@ def createTable(connection: sqlite3.Connection, cursor: sqlite3.Cursor):
 
 
 def emailValidation(email: str) -> bool:
+    """Base emai validation func, returns True if all is ok
+    args: email: str"""
+    
+    
     if email.count("@") == 1 and email.count(".") == 1:  # write with fnmatch
         return True
 
