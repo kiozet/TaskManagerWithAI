@@ -24,7 +24,7 @@ def checkEmailAndPassword(cursor) -> bool:
     func that check email and password in db
     return True or False depends on check
     """
-    
+
     email, password = getEmailAndPassword()
 
     try:
