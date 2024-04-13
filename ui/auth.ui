@@ -21,7 +21,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QLabel" name="welcomeApplicationLabel">
+    <widget class="QLabel" name="welcomeApplicationLabelAuthorization">
      <property name="minimumSize">
       <size>
        <width>246</width>
@@ -44,24 +44,24 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
      <item row="0" column="0">
-      <widget class="QLabel" name="userNameLabel">
+      <widget class="QLabel" name="userNameLabelAuthorization">
        <property name="text">
         <string>UserName:</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="userNameText"/>
+      <widget class="QLineEdit" name="userNameTextAuthorization"/>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="passwordLabel">
+      <widget class="QLabel" name="passwordLabelAuthorization">
        <property name="text">
         <string>Password:</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="passwordText"/>
+      <widget class="QLineEdit" name="passwordTextAuthorization"/>
      </item>
     </layout>
    </item>
@@ -97,14 +97,14 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="loginButton">
+      <widget class="QPushButton" name="loginButtonAuthorization">
        <property name="text">
         <string>Login</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="cancelApplicationButton">
+      <widget class="QPushButton" name="cancelApplicationButtonAuthorization">
        <property name="text">
         <string>Cancel</string>
        </property>
