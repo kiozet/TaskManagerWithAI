@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1189</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>.SF Soft Numeric</family>
+    <pointsize>19</pointsize>
+    <weight>75</weight>
+    <italic>false</italic>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QLabel" name="project_name_title">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>70</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>The Duke of Prunes</family>
+     <pointsize>19</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Project name</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>981</width>
+     <height>122</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QLabel" name="pr_description">
+      <property name="text">
+       <string>описание</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="project_info" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="rightMargin">
+          <number>7</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>The Duke of Prunes</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Date added:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>The Duke of Prunes</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Deadline:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <family>The Duke of Prunes</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Participants</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="pr_date_added">
+           <property name="text">
+            <string>дата</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="pr_deadline">
+           <property name="text">
+            <string>время</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="pr_participants">
+           <property name="text">
+            <string>твоя семья</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QFrame" name="tasks_info">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="rightMargin">
+          <number>7</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="font">
+            <font>
+             <family>The Duke of Prunes</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>All tasks:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="font">
+            <font>
+             <family>The Duke of Prunes</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Done:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="font">
+            <font>
+             <family>The Duke of Prunes</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Frozen:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="all_tasks_numb">
+           <property name="text">
+            <string>цифра</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="done_tasks_numb">
+           <property name="text">
+            <string>цифра</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="frozen_tasks_numb">
+           <property name="text">
+            <string>цифра</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>241</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Border-radius: 20px;
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>330</y>
+     <width>241</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Border-radius: 20px;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>330</y>
+     <width>241</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Border-radius: 20px;
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>330</y>
+     <width>241</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Border-radius: 20px;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>261</y>
+     <width>981</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>The Duke of Prunes</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>               To do</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <family>The Duke of Prunes</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>             In progress</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <family>The Duke of Prunes</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-colour: rgba(255, 255, 255, 30)
+</string>
+      </property>
+      <property name="text">
+       <string>              Closed</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_7">
+      <property name="font">
+       <font>
+        <family>The Duke of Prunes</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>              Frozen</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
