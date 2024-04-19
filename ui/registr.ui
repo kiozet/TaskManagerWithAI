@@ -31,12 +31,12 @@
      <x>20</x>
      <y>10</y>
      <width>207</width>
-     <height>139</height>
+     <height>167</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="welcomeRegistrationLabel">
+     <widget class="QLabel" name="wecum_label_reg">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -53,34 +53,46 @@
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
       <item row="0" column="0">
-       <widget class="QLabel" name="userNameLavelRegistration">
+       <widget class="QLabel" name="usr_label_reg">
         <property name="text">
          <string>UserName:</string>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLineEdit" name="userNameTextRegistration"/>
+       <widget class="QLineEdit" name="usr_name_text_reg">
+        <property name="styleSheet">
+         <string notr="true">border-radius: 8px;
+</string>
+        </property>
+       </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QLabel" name="emailLabelRegistration">
+       <widget class="QLabel" name="email_label_reg">
         <property name="text">
          <string>Email:</string>
         </property>
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QLineEdit" name="emailTextRegistration"/>
+       <widget class="QLineEdit" name="email_text_reg">
+        <property name="styleSheet">
+         <string notr="true">border-radius: 8px;</string>
+        </property>
+       </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QLabel" name="passwordLabelRegistration">
+       <widget class="QLabel" name="password_label_reg">
         <property name="text">
          <string>Password:</string>
         </property>
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QLineEdit" name="passwordTextRegistration">
+       <widget class="QLineEdit" name="password_text_reg">
+        <property name="styleSheet">
+         <string notr="true">border-radius: 8px;</string>
+        </property>
         <property name="echoMode">
          <enum>QLineEdit::Password</enum>
         </property>
@@ -120,16 +132,25 @@
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="confirmButtonRegistration">
+       <widget class="QPushButton" name="confirm_button_reg">
         <property name="text">
          <string>Confirm</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="cancelButtonRegistration">
+       <widget class="QPushButton" name="cancel_button_reg">
         <property name="text">
          <string>Cancel</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
