@@ -16,7 +16,7 @@ def getEmailAndPassword() -> tuple:
         return (email, password)
 
     else:
-        raise "Bad email or epmpty password"
+        raise "Bad email or empty password"
 
 
 def checkEmailAndPassword(cursor) -> bool:
