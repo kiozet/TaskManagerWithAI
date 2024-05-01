@@ -55,7 +55,7 @@
      <x>170</x>
      <y>60</y>
      <width>986</width>
-     <height>709</height>
+     <height>722</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -325,6 +325,17 @@
        </widget>
       </item>
       <item>
+       <widget class="QToolButton" name="toolButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../resourses.qrc/plus.png</normaloff>../../../resourses.qrc/plus.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QLabel" name="label_5">
         <property name="font">
          <font>
@@ -584,6 +595,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../../resourses.qrc/plus.qrc"/>
+ </resources>
  <connections/>
 </ui>
