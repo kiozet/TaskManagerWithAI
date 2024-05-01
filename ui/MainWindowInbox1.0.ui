@@ -80,7 +80,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Clients</string>
+       <string>Projects</string>
       </property>
       <property name="autoDefault">
        <bool>false</bool>
@@ -140,7 +140,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Contacts</string>
+       <string>Profile</string>
       </property>
       <property name="flat">
        <bool>true</bool>
@@ -149,7 +149,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>229</x>
@@ -197,7 +197,7 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QWidget" name="">
+        <widget class="QWidget" name="layoutWidget">
          <property name="geometry">
           <rect>
            <x>0</x>
