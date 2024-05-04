@@ -111,6 +111,9 @@
               <font>
                <family>The Duke of Prunes</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
               </font>
              </property>
              <property name="text">
@@ -124,6 +127,9 @@
               <font>
                <family>The Duke of Prunes</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
               </font>
              </property>
              <property name="text">
@@ -137,6 +143,9 @@
               <font>
                <family>The Duke of Prunes</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
               </font>
              </property>
              <property name="text">
@@ -197,6 +206,8 @@
        <widget class="QWidget" name="project_info" native="true">
         <property name="font">
          <font>
+          <family>.SF Soft Numeric</family>
+          <pointsize>19</pointsize>
           <weight>75</weight>
           <italic>false</italic>
           <bold>true</bold>
@@ -230,6 +241,13 @@
               <font>
                <family>The Duke of Prunes</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
+               <underline>false</underline>
+               <strikeout>false</strikeout>
+               <stylestrategy>PreferDefault</stylestrategy>
+               <kerning>true</kerning>
               </font>
              </property>
              <property name="text">
@@ -243,6 +261,13 @@
               <font>
                <family>The Duke of Prunes</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
+               <underline>false</underline>
+               <strikeout>false</strikeout>
+               <stylestrategy>PreferDefault</stylestrategy>
+               <kerning>true</kerning>
               </font>
              </property>
              <property name="text">
@@ -256,6 +281,13 @@
               <font>
                <family>The Duke of Prunes</family>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
+               <underline>false</underline>
+               <strikeout>false</strikeout>
+               <stylestrategy>PreferDefault</stylestrategy>
+               <kerning>true</kerning>
               </font>
              </property>
              <property name="text">
@@ -313,6 +345,7 @@
           <family>The Duke of Prunes</family>
           <pointsize>16</pointsize>
           <weight>50</weight>
+          <italic>false</italic>
           <bold>false</bold>
          </font>
         </property>
@@ -325,7 +358,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QToolButton" name="add_task">
+       <widget class="QToolButton" name="addTask">
         <property name="text">
          <string/>
         </property>
@@ -342,6 +375,7 @@
           <family>The Duke of Prunes</family>
           <pointsize>16</pointsize>
           <weight>50</weight>
+          <italic>false</italic>
           <bold>false</bold>
          </font>
         </property>
@@ -360,6 +394,7 @@
           <family>The Duke of Prunes</family>
           <pointsize>16</pointsize>
           <weight>50</weight>
+          <italic>false</italic>
           <bold>false</bold>
          </font>
         </property>
@@ -382,6 +417,7 @@
           <family>The Duke of Prunes</family>
           <pointsize>16</pointsize>
           <weight>50</weight>
+          <italic>false</italic>
           <bold>false</bold>
          </font>
         </property>
@@ -508,7 +544,11 @@
    </property>
    <property name="font">
     <font>
+     <family>.SF Soft Numeric</family>
      <pointsize>13</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
      <stylestrategy>PreferDefault</stylestrategy>
     </font>
    </property>
@@ -520,7 +560,11 @@
       </property>
       <property name="font">
        <font>
+        <family>.SF Soft Numeric</family>
         <pointsize>13</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
         <stylestrategy>PreferDefault</stylestrategy>
        </font>
       </property>
@@ -542,7 +586,11 @@
       </property>
       <property name="font">
        <font>
+        <family>.SF Soft Numeric</family>
         <pointsize>13</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
         <stylestrategy>PreferDefault</stylestrategy>
        </font>
       </property>
@@ -561,7 +609,11 @@
       </property>
       <property name="font">
        <font>
+        <family>.SF Soft Numeric</family>
         <pointsize>13</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
         <stylestrategy>PreferDefault</stylestrategy>
        </font>
       </property>
@@ -580,7 +632,11 @@
       </property>
       <property name="font">
        <font>
+        <family>.SF Soft Numeric</family>
         <pointsize>13</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
         <stylestrategy>PreferDefault</stylestrategy>
        </font>
       </property>
