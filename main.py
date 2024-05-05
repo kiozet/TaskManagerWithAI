@@ -1,6 +1,7 @@
 from PyQt6.QtWidgets import *
 from PyQt6 import uic
 import sys
+from addTaskWindow import TaskManager
 
 
 class App(QFrame):
@@ -11,7 +12,11 @@ class App(QFrame):
         self.addTask.clicked.connect(self.addNewTask)
         
     
-    def addNewTask():
+    def addNewTask(self):
+        taskManagerApp = QApplication(sys.argv)
+        taskManagerWindow = TaskManager()
+        taskManagerWindow.show()
+        sys.exit(taskManagerApp.exec())
 
 
 if __name__ == '__main__':
