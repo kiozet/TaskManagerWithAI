@@ -26,7 +26,7 @@ def password_check(password):
     return True
 
 
-def login_check(login):
+def loginCheck(login):
     for i in login:
         if i in "абвгдеёжзийклмнопрстуфхцчшщьыъэюя":
             raise CyrillicError
