@@ -4,7 +4,7 @@ import sys
 from addTaskWindow import TaskManager
 
 
-class App(QFrame):
+class TaskMainWindow(QFrame):
     def __init__(self):
         super().__init__()
         uic.loadUi('ui/MainWindowTaskManager1.0.ui', self)
@@ -13,14 +13,12 @@ class App(QFrame):
         
     
     def addNewTask(self):
-        taskManagerApp = QApplication(sys.argv)
-        taskManagerWindow = TaskManager()
-        taskManagerWindow.show()
-        sys.exit(taskManagerApp.exec())
+        self.taskManagerWindow = TaskManager()
+        self.taskManagerWindow.show()
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  
     app = QApplication(sys.argv)
-    displayFrame = App()
+    displayFrame = TaskMainWindow()
     displayFrame.show()
-    sys.exit(app.exec())
+    app.exec()
