@@ -35,11 +35,11 @@ class LineEditData(QRunnable):
             ) and (gifState == False):
                 displayFrame.gifStateSignalEmit(True)
                 gifState = True
-                
+
                 privUsrName = displayFrame.usr_name_text_reg.text()
                 privEmail = displayFrame.email_text_reg.text()
                 privPassword = displayFrame.password_text_reg.text()
-                
+
                 time.sleep(0.6)
 
             else:
