@@ -16,13 +16,21 @@ class LineEditData(QRunnable):
     @pyqtSlot()
     def run(self):
         privUsrName = ''
+        privEmail = ''
+        privPassword =''
         gifState = False
         
         while True:
-            if (displayFrame.usr_name_text_reg.text() != "") and (displayFrame.usr_name_text_reg.text() != privUsrName) and (gifState == False):
+            usrNameBool = (displayFrame.usr_name_text_reg.text() != "") and (displayFrame.usr_name_text_reg.text() != privUsrName)
+            emailBool = (displayFrame.email_text_reg.text() != "") and (displayFrame.email_text_reg.text() != privEmail)
+            passwordBool = (displayFrame.password_text_reg.text() != "") and (displayFrame.password_text_reg.text() != privPassword)
+            
+            if  ((usrNameBool == True)or (emailBool == True) or (passwordBool == True)) and (gifState == False):
                 displayFrame.gifStateSignalEmit(True)
                 gifState = True
                 privUsrName = displayFrame.usr_name_text_reg.text()
+                privEmail = displayFrame.email_text_reg.text()
+                privPassword = displayFrame.password_text_reg.text()
                 time.sleep(0.6)
                 
             else:
