@@ -1,6 +1,7 @@
 from langchain.schema import HumanMessage, SystemMessage
 from langchain.chat_models.gigachat import GigaChat
 from PyQt6 import QtWidgets, QtCore
+from PyQt6.QtGui import QMovie
 import sys
 import time
 
@@ -10,6 +11,10 @@ class DesignApp(QtWidgets.QMainWindow, MyApp.Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.button.clicked.connect(self.AddTitleTask)
+        
+        self.movie = QMovie("content/pedro-racoon.gif")
+        self.label.setMovie(self.movie)
+        self.movie.start()
 
     def AddTitleTask(self):
         title_task = self.lineEdit.text()
