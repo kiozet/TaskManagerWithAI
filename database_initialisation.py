@@ -17,7 +17,7 @@ class SpecialSymbolsError(Exception):
     pass
 
 
-def password_check(password):
+def passwordCheck(password):
     for i in password:
         if i in "абвгдеёжзийклмнопрстуфхцчшщьыъэюя":
             raise CyrillicError
