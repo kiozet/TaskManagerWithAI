@@ -13,17 +13,25 @@ class TaskMainWindow(QFrame):
         self.addTask.clicked.connect(self.addNewTask)
         self.projectsBtn.clicked.connect(self.switchToProjectsPage)
         
+        self.taskManagerBtn.setStyleSheet('color: blue')
+        
         
     def addNewTask(self):
         self.taskManagerWindow = TaskManager()
         self.taskManagerWindow.show()
-
+        
+    def switchToProfileWindow(self):
+        pass
+    
+    def switchToInboxWindow(self):
+        pass
+    
     def switchToProjectsPage(self):
         pass
 
 
 if __name__ == '__main__':  
     app = QApplication(sys.argv)
-    displayFrame = TaskMainWindow(ui='ui/MainWindowTaskManager1.0.ui')
+    displayFrame = TaskMainWindow()
     displayFrame.show()
     app.exec()
