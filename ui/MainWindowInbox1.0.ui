@@ -63,19 +63,27 @@
    </property>
    <property name="font">
     <font>
+     <family>.SF Soft Numeric</family>
      <pointsize>13</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
      <stylestrategy>PreferDefault</stylestrategy>
     </font>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_6">
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="projectsBtn">
       <property name="enabled">
        <bool>true</bool>
       </property>
       <property name="font">
        <font>
+        <family>.SF Soft Numeric</family>
         <pointsize>13</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
         <stylestrategy>PreferDefault</stylestrategy>
        </font>
       </property>
@@ -91,13 +99,17 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="taskManagerBtn">
       <property name="enabled">
        <bool>true</bool>
       </property>
       <property name="font">
        <font>
+        <family>.SF Soft Numeric</family>
         <pointsize>13</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
         <stylestrategy>PreferDefault</stylestrategy>
        </font>
       </property>
@@ -110,13 +122,17 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="inboxBtn">
       <property name="enabled">
        <bool>true</bool>
       </property>
       <property name="font">
        <font>
+        <family>.SF Soft Numeric</family>
         <pointsize>13</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
         <stylestrategy>PreferDefault</stylestrategy>
        </font>
       </property>
@@ -129,13 +145,17 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="profileBtn">
       <property name="enabled">
        <bool>true</bool>
       </property>
       <property name="font">
        <font>
+        <family>.SF Soft Numeric</family>
         <pointsize>13</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
         <stylestrategy>PreferDefault</stylestrategy>
        </font>
       </property>

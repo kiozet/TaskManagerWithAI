@@ -12,6 +12,7 @@ class LineEditData(QRunnable):
 
         self.threadpool = QThreadPool()
 
+
     @pyqtSlot()
     def run(self):
         privUsrName = ""
@@ -52,8 +53,9 @@ class RegistrationWindow(QFrame):
 
     def __init__(self) -> None:
         super().__init__()
-        uic.loadUi("ui/registr.ui", self)
-
+        
+        self.ui = uic.loadUi("ui/registr.ui", self)
+        
         self.movie = QMovie("content/pedro-racoon.gif")
         self.GIF.setMovie(self.movie)
 
