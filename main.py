@@ -2,10 +2,10 @@ from PyQt6.QtWidgets import *
 from PyQt6 import uic, QtCore
 import sys
 
-from projectsWindow import ProjectsMainWindow
-from taskManagerWindow import TaskMainWindow
-from profileWindow import ProfileMainWindow
-from inboxWindow import InboxMainWindow
+from resources.projectsWindow import ProjectsMainWindow
+from resources.taskManagerWindow import TaskMainWindow
+from resources.profileWindow import ProfileMainWindow
+from resources.inboxWindow import InboxMainWindow
 
 
 if __name__ == "__main__":

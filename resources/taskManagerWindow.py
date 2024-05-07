@@ -1,8 +1,7 @@
 from PyQt6.QtWidgets import *
 from PyQt6 import uic, QtCore
 import sys
-from addTaskWindow import TaskManager
-import projectsWindow
+from resources.addTaskWindow import TaskManager
 
 
 class TaskMainWindow(QFrame):
