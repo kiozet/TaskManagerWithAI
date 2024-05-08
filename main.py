@@ -34,11 +34,13 @@ if __name__ == "__main__":
     projectsWindow.setWidget(widget)
     registrationWindow.setWidget(widget)
     
-    if config.returnDBStatus:
+    if config.returnDBStatus():
+        # task manager window
         widget.show()
         app.exec()
         
     else:
+        # reg/auth window
         widget.setCurrentIndex(4)
         widget.show()
         app.exec()

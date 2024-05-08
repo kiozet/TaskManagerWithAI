@@ -7,11 +7,11 @@ import time
 
 
 class LineEditData(QRunnable):
-    def __init__(self) -> None:
+    def __init__(self, registrationWindow) -> None:
         super(LineEditData, self).__init__()
 
         self.threadpool = QThreadPool()
-
+        self.registrationWindow = registrationWindow      
 
     @pyqtSlot()
     def run(self):
@@ -21,31 +21,31 @@ class LineEditData(QRunnable):
         gifState = False
 
         while True:
-            usrNameBool = (registrationWindow.usr_name_text_reg.text() != "") and (
-                registrationWindow.usr_name_text_reg.text() != privUsrName
+            usrNameBool = (self.registrationWindow.usr_name_text_reg.text() != "") and (
+                self.registrationWindow.usr_name_text_reg.text() != privUsrName
             )
-            emailBool = (registrationWindow.email_text_reg.text() != "") and (
-                registrationWindow.email_text_reg.text() != privEmail
+            emailBool = (self.registrationWindow.email_text_reg.text() != "") and (
+                self.registrationWindow.email_text_reg.text() != privEmail
             )
-            passwordBool = (registrationWindow.password_text_reg.text() != "") and (
-                registrationWindow.password_text_reg.text() != privPassword
+            passwordBool = (self.registrationWindow.password_text_reg.text() != "") and (
+                self.registrationWindow.password_text_reg.text() != privPassword
             )
 
             if (
                 (usrNameBool == True) or (emailBool == True) or (passwordBool == True)
             ) and (gifState == False):
-                registrationWindow.gifStateSignalEmit(True)
+                self.registrationWindow.gifStateSignalEmit(True)
                 gifState = True
 
-                privUsrName = registrationWindow.usr_name_text_reg.text()
-                privEmail = registrationWindow.email_text_reg.text()
-                privPassword = registrationWindow.password_text_reg.text()
+                privUsrName = self.registrationWindow.usr_name_text_reg.text()
+                privEmail = self.registrationWindow.email_text_reg.text()
+                privPassword = self.registrationWindow.password_text_reg.text()
 
                 time.sleep(0.6)
 
             else:
                 gifState = False
-                registrationWindow.gifStateUpdater(False)
+                self.registrationWindow.gifStateUpdater(False)
 
 
 class RegistrationWindow(QFrame):
@@ -70,7 +70,7 @@ class RegistrationWindow(QFrame):
         self.gifStateSignal.emit(state)
 
     def gifAnimation(self):
-        gifAnimation = LineEditData()
+        gifAnimation = LineEditData(registrationWindow=self)
         self.threadpool.start(gifAnimation)
 
     def gifStateUpdater(self, state: bool) -> None:
@@ -84,8 +84,8 @@ class RegistrationWindow(QFrame):
         self.widget = widget
 
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    registrationWindow = RegistrationWindow()
-    registrationWindow.show()
-    app.exec()
+# if __name__ == "__main__":
+#     app = QApplication(sys.argv)
+#     registrationWindow = RegistrationWindow()
+#     registrationWindow.show()
+#     app.exec()
