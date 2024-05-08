@@ -1,6 +1,5 @@
 from PyQt6.QtWidgets import *
 from PyQt6 import uic, QtCore
-import sys
 from langchain.schema import HumanMessage, SystemMessage
 from langchain.chat_models.gigachat import GigaChat
 import time

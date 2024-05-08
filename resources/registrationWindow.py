@@ -1,8 +1,7 @@
 from PyQt6.QtWidgets import *
-from PyQt6 import uic, QtCore
+from PyQt6 import uic
 from PyQt6.QtGui import QMovie
-from PyQt6.QtCore import QThread, pyqtSignal, pyqtSlot, QRunnable, QThreadPool
-import sys
+from PyQt6.QtCore import pyqtSignal, pyqtSlot, QRunnable, QThreadPool
 import time
 
 

@@ -1,6 +1,5 @@
 from PyQt6.QtWidgets import *
-from PyQt6 import uic, QtCore
-import sys
+from PyQt6 import uic
 
 
 class ProfileMainWindow(QFrame):
