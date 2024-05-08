@@ -21,31 +21,31 @@ class LineEditData(QRunnable):
         gifState = False
 
         while True:
-            usrNameBool = (displayFrame.usr_name_text_reg.text() != "") and (
-                displayFrame.usr_name_text_reg.text() != privUsrName
+            usrNameBool = (registrationWindow.usr_name_text_reg.text() != "") and (
+                registrationWindow.usr_name_text_reg.text() != privUsrName
             )
-            emailBool = (displayFrame.email_text_reg.text() != "") and (
-                displayFrame.email_text_reg.text() != privEmail
+            emailBool = (registrationWindow.email_text_reg.text() != "") and (
+                registrationWindow.email_text_reg.text() != privEmail
             )
-            passwordBool = (displayFrame.password_text_reg.text() != "") and (
-                displayFrame.password_text_reg.text() != privPassword
+            passwordBool = (registrationWindow.password_text_reg.text() != "") and (
+                registrationWindow.password_text_reg.text() != privPassword
             )
 
             if (
                 (usrNameBool == True) or (emailBool == True) or (passwordBool == True)
             ) and (gifState == False):
-                displayFrame.gifStateSignalEmit(True)
+                registrationWindow.gifStateSignalEmit(True)
                 gifState = True
 
-                privUsrName = displayFrame.usr_name_text_reg.text()
-                privEmail = displayFrame.email_text_reg.text()
-                privPassword = displayFrame.password_text_reg.text()
+                privUsrName = registrationWindow.usr_name_text_reg.text()
+                privEmail = registrationWindow.email_text_reg.text()
+                privPassword = registrationWindow.password_text_reg.text()
 
                 time.sleep(0.6)
 
             else:
                 gifState = False
-                displayFrame.gifStateUpdater(False)
+                registrationWindow.gifStateUpdater(False)
 
 
 class RegistrationWindow(QFrame):
@@ -55,6 +55,8 @@ class RegistrationWindow(QFrame):
         super().__init__()
         
         self.ui = uic.loadUi("ui/registr.ui", self)
+        
+        self.widget = None
         
         self.movie = QMovie("content/pedro-racoon.gif")
         self.GIF.setMovie(self.movie)
@@ -77,10 +79,13 @@ class RegistrationWindow(QFrame):
 
         else:
             self.movie.setPaused(True)
+    
+    def setWidget(self, widget):
+        self.widget = widget
 
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    displayFrame = RegistrationWindow()
-    displayFrame.show()
+    registrationWindow = RegistrationWindow()
+    registrationWindow.show()
     app.exec()
