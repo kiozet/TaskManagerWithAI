@@ -9,12 +9,25 @@ def createTable(connection: sqlite3.Connection, cursor: sqlite3.Cursor) -> bool:
         sqlite3 db"""
 
         cursor.execute(
-            """
-        CREATE TABLE IF NOT EXISTS Users (
+            """CREATE TABLE IF NOT EXISTS users(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
         email TEXT NOT NULL,
-        password TEXT NOT NULL
+        login TEXT NOT NULL,
+        password TEXT NOT NULL,
+        name TEXT NOT NULL,
+        )"""
         )
-        """
+        cursor.execute(
+            """CREATE TABLE IF NOT EXISTS Tasks(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                title TEXT,
+                description TEXT,
+                status TEXT,
+                date_created TEXT,
+                deadLine TEXT,
+                FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
+                )"""
         )
 
         connection.commit()
@@ -36,19 +49,29 @@ def emailValidation(email: str) -> bool:
         return False
 
 
+def loginExistance(login, cursor: sqlite3.Cursor):
+    info = cursor.execute("SELECT EXISTS(SELECT 1 FROM users WHERE login = '{login}')")
+
+
 def registrationUser(connection: sqlite3.Connection, cursor: sqlite3.Cursor) -> bool:
     """User registration function by validate it and insert it into table.
     args: connection: sqlite3.Connection, cursor: sqlite3.Cursor from your sqlite3 db
     """
 
     # input email and password, waiting to frontend be done
+    login = str(input())
     email = str(input())
     password = str(input())
 
-    if emailValidation(email) == True and password != "":
+    if (
+        emailValidation(email) == True
+        and password != ""
+        and loginExistance(login) == False
+    ):
         cursor.execute(
-            "INSERT INTO Users (email, password) VALUES (?, ?)",
+            "INSERT INTO Users (login, email, password) VALUES (?, ?, ?)",
             (
+                login,
                 email,
                 password,
             ),
@@ -67,7 +90,7 @@ def main():
     This is the main function of program
     """
 
-    db = "authorization_test.db"
+    db = "Project.db"
     connection = sqlite3.connect(db)
     cursor = connection.cursor()
 
