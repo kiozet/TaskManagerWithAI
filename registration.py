@@ -15,6 +15,9 @@ def createTable(connection: sqlite3.Connection, cursor: sqlite3.Cursor) -> bool:
         login TEXT NOT NULL,
         password TEXT NOT NULL,
         name TEXT NOT NULL,
+        allTasks INTEGER DEFAULT 0,
+        doneTasks INTEGER DEFAULT 0,
+        frozenTasks INTEGER DEFAULT 0
         )"""
         )
         cursor.execute(
