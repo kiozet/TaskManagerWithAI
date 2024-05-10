@@ -1,57 +1,105 @@
-"""The authorization part of a program"""
+"""The registration part of a program"""
 
 import sqlite3
 
 
-def getEmailAndPassword() -> tuple:
-    """
-    function that get email and password. than validate them
-    returns (email, password) tuple
+def createTable(connection: sqlite3.Connection, cursor: sqlite3.Cursor) -> bool:
+    try:
+        """Create table func, args: connection: sqlite3.Connection, cursor: sqlite3.Cursor from your
+        sqlite3 db"""
+
+        cursor.execute(
+            """CREATE TABLE IF NOT EXISTS users(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        email TEXT NOT NULL,
+        login TEXT NOT NULL,
+        password TEXT NOT NULL,
+        name TEXT NOT NULL,
+        surname TEXT,
+        allTasks INTEGER DEFAULT 0,
+        doneTasks INTEGER DEFAULT 0,
+        frozenTasks INTEGER DEFAULT 0
+        )"""
+        )
+        cursor.execute(
+            """CREATE TABLE IF NOT EXISTS tasks(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                title TEXT,
+                description TEXT,
+                status TEXT,
+                date_created TEXT,
+                deadLine TEXT,
+                FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
+                )"""
+        )
+
+        connection.commit()
+
+        return True
+
+    except Exception as ex:
+        return False
+
+
+def emailValidation(email: str) -> bool:
+    """Base emai validation func, returns True if all is ok
+    args: email: str"""
+
+    if email.count("@") == 1 and email.count(".") == 1:  # write with fnmatch
+        return True
+
+    else:
+        return False
+
+
+def loginExistance(login, cursor: sqlite3.Cursor):
+    info = cursor.execute("SELECT EXISTS(SELECT 1 FROM users WHERE login = '{login}')")
+
+
+def registrationUser(connection: sqlite3.Connection, cursor: sqlite3.Cursor) -> bool:
+    """User registration function by validate it and insert it into table.
+    args: connection: sqlite3.Connection, cursor: sqlite3.Cursor from your sqlite3 db
     """
 
+    # input email and password, waiting to frontend be done
+    login = str(input())
     email = str(input())
     password = str(input())
 
-    if email.count("@") == 1 and email.count(".") == 1 and password != "":
-        return (email, password)
+    if (
+        emailValidation(email) == True
+        and password != ""
+        and loginExistance(login) == False
+    ):
+        cursor.execute(
+            "INSERT INTO Users (login, email, password) VALUES (?, ?, ?)",
+            (
+                login,
+                email,
+                password,
+            ),
+        )
+        connection.commit()
+
+        return True
 
     else:
-        raise "Bad email or epmpty password"
-
-
-def checkEmailAndPassword(cursor) -> bool:
-    """
-    func that check email and password in db
-    return True or False depends on check
-    """
-
-    email, password = getEmailAndPassword()
-
-    try:
-        cursor.execute("SELECT password FROM users where email = ?", (email,))
-        data = cursor.fetchall()[0][0]
-
-        if data == password:
-            return True
-
-        else:
-            return False
-
-    except Exception as ex:
-        print("email doesn't exist")
+        print("bad email or password = ''")
+        return False
 
 
 def main():
     """
-    This is main function of program that
-    Connect with db and create cursor
+    This is the main function of program
     """
 
     db = "Project.db"
     connection = sqlite3.connect(db)
     cursor = connection.cursor()
 
-    checkEmailAndPassword(cursor)
+    createTable(connection, cursor)
+    registrationUser(connection, cursor)
 
 
 if __name__ == "__main__":
