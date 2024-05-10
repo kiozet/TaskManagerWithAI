@@ -15,13 +15,14 @@ def createTable(connection: sqlite3.Connection, cursor: sqlite3.Cursor) -> bool:
         login TEXT NOT NULL,
         password TEXT NOT NULL,
         name TEXT NOT NULL,
+        surname TEXT,
         allTasks INTEGER DEFAULT 0,
         doneTasks INTEGER DEFAULT 0,
         frozenTasks INTEGER DEFAULT 0
         )"""
         )
         cursor.execute(
-            """CREATE TABLE IF NOT EXISTS Tasks(
+            """CREATE TABLE IF NOT EXISTS tasks(
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 user_id INTEGER NOT NULL,
                 title TEXT,
