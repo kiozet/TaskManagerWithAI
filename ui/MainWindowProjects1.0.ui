@@ -69,7 +69,7 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_6">
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="left_menu_projects">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -91,7 +91,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="left_menu_tm">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -110,7 +110,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="left_menu_inbox">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -129,7 +129,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="left_menu_profile">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -192,7 +192,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>20</x>

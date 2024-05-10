@@ -69,7 +69,7 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_6">
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="left_menu_project">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -91,7 +91,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="left_menu_tm">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -110,7 +110,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="left_menu_inbox">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -129,7 +129,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="left_menu_profile">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -149,139 +149,31 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>229</x>
-     <y>50</y>
-     <width>721</width>
-     <height>712</height>
+     <x>300</x>
+     <y>70</y>
+     <width>541</width>
+     <height>51</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="minimumSize">
-       <size>
-        <width>681</width>
-        <height>31</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>681</width>
-        <height>31</height>
-       </size>
-      </property>
-     </widget>
+     <widget class="QLineEdit" name="search_line_inbox"/>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QFrame" name="frame">
-        <property name="minimumSize">
-         <size>
-          <width>691</width>
-          <height>671</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>691</width>
-          <height>671</height>
-         </size>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <widget class="QWidget" name="layoutWidget">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>10</y>
-           <width>681</width>
-           <height>137</height>
-          </rect>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <item>
-           <widget class="QToolButton" name="toolButton">
-            <property name="minimumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Notification1</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QToolButton" name="toolButton_2">
-            <property name="minimumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Notification2</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QToolButton" name="toolButton_3">
-            <property name="minimumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Notification3</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-      </item>
-      <item>
-       <widget class="QScrollBar" name="verticalScrollBar">
-        <property name="minimumSize">
-         <size>
-          <width>20</width>
-          <height>651</height>
-         </size>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <widget class="QPushButton" name="search_button_inbox">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

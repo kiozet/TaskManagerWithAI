@@ -69,7 +69,7 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_6">
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="left_menu_project">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -91,7 +91,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="left_menu_tm">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -110,7 +110,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="left_menu_inbox">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -129,7 +129,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="left_menu_porfile">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -149,20 +149,20 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>190</x>
      <y>110</y>
-     <width>403</width>
-     <height>410</height>
+     <width>407</width>
+     <height>420</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QLabel" name="name_label">
+       <widget class="QLabel" name="name_label_profile">
         <property name="minimumSize">
          <size>
           <width>100</width>
@@ -175,7 +175,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="surname_label">
+       <widget class="QLabel" name="surname_label_profile">
         <property name="minimumSize">
          <size>
           <width>113</width>
