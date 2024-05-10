@@ -49,262 +49,168 @@
   <property name="frameShadow">
    <enum>QFrame::Raised</enum>
   </property>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>-20</x>
-     <y>230</y>
-     <width>191</width>
-     <height>176</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>.SF Soft Numeric</family>
-     <pointsize>13</pointsize>
-     <weight>75</weight>
-     <italic>false</italic>
-     <bold>true</bold>
-     <stylestrategy>PreferDefault</stylestrategy>
-    </font>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_6">
-    <item>
-     <widget class="QPushButton" name="projectsBtn">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="font">
-       <font>
-        <family>.SF Soft Numeric</family>
-        <pointsize>13</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-        <stylestrategy>PreferDefault</stylestrategy>
-       </font>
-      </property>
-      <property name="text">
-       <string>Projects</string>
-      </property>
-      <property name="autoDefault">
-       <bool>false</bool>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="taskManagerBtn">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="font">
-       <font>
-        <family>.SF Soft Numeric</family>
-        <pointsize>13</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-        <stylestrategy>PreferDefault</stylestrategy>
-       </font>
-      </property>
-      <property name="text">
-       <string>Task Manager</string>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="inboxBtn">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="font">
-       <font>
-        <family>.SF Soft Numeric</family>
-        <pointsize>13</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-        <stylestrategy>PreferDefault</stylestrategy>
-       </font>
-      </property>
-      <property name="text">
-       <string>Inbox</string>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="profileBtn">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="font">
-       <font>
-        <family>.SF Soft Numeric</family>
-        <pointsize>13</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-        <stylestrategy>PreferDefault</stylestrategy>
-       </font>
-      </property>
-      <property name="text">
-       <string>Profile</string>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>229</x>
-     <y>50</y>
-     <width>721</width>
-     <height>712</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="minimumSize">
-       <size>
-        <width>681</width>
-        <height>31</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>681</width>
-        <height>31</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QFrame" name="frame">
-        <property name="minimumSize">
-         <size>
-          <width>691</width>
-          <height>671</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>691</width>
-          <height>671</height>
-         </size>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <widget class="QWidget" name="layoutWidget">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>10</y>
-           <width>681</width>
-           <height>137</height>
-          </rect>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <item>
+      <widget class="QPushButton" name="projectsBtn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="font">
+        <font>
+         <family>.SF Soft Numeric</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="text">
+        <string>Projects</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="taskManagerBtn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="font">
+        <font>
+         <family>.SF Soft Numeric</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="text">
+        <string>Task Manager</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="inboxBtn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="font">
+        <font>
+         <family>.SF Soft Numeric</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="text">
+        <string>Inbox</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="profileBtn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="font">
+        <font>
+         <family>.SF Soft Numeric</family>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="text">
+        <string>Profile</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <item>
-           <widget class="QToolButton" name="toolButton">
-            <property name="minimumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Notification1</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QToolButton" name="toolButton_2">
-            <property name="minimumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Notification2</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QToolButton" name="toolButton_3">
-            <property name="minimumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>671</width>
-              <height>41</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Notification3</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>681</width>
+            <height>137</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QToolButton" name="toolButton">
+             <property name="text">
+              <string>Notification1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="toolButton_2">
+             <property name="text">
+              <string>Notification2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="toolButton_3">
+             <property name="text">
+              <string>Notification3</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
-       </widget>
-      </item>
-      <item>
-       <widget class="QScrollBar" name="verticalScrollBar">
-        <property name="minimumSize">
-         <size>
-          <width>20</width>
-          <height>651</height>
-         </size>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-   </layout>
-  </widget>
+       </item>
+       <item>
+        <widget class="QScrollBar" name="verticalScrollBar">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
