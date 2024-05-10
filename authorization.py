@@ -16,7 +16,7 @@ def getEmailAndPassword() -> tuple:
         return (email, password)
 
     else:
-        raise "Bad email or empty password"
+        raise "Bad email or epmpty password"
 
 
 def checkEmailAndPassword(cursor) -> bool:
@@ -28,7 +28,7 @@ def checkEmailAndPassword(cursor) -> bool:
     email, password = getEmailAndPassword()
 
     try:
-        cursor.execute("SELECT password FROM Users where email = ?", (email,))
+        cursor.execute("SELECT password FROM users where email = ?", (email,))
         data = cursor.fetchall()[0][0]
 
         if data == password:
@@ -47,7 +47,7 @@ def main():
     Connect with db and create cursor
     """
 
-    db = "authorization_test.db"
+    db = "Project.db"
     connection = sqlite3.connect(db)
     cursor = connection.cursor()
 
