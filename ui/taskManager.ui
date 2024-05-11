@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLineEdit" name="taskName">
+  <widget class="QLineEdit" name="task_name_line">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -23,7 +23,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="generateBtn">
+  <widget class="QPushButton" name="generate_btn">
    <property name="geometry">
     <rect>
      <x>350</x>
@@ -36,7 +36,7 @@
     <string>Сгенерировать</string>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="taskContent">
+  <widget class="QTextBrowser" name="task_content_area">
    <property name="geometry">
     <rect>
      <x>20</x>
