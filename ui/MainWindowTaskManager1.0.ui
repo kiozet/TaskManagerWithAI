@@ -41,7 +41,7 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_6">
      <item>
-      <widget class="QPushButton" name="left_menu_projects">
+      <widget class="QPushButton" name="projectsBtn">
        <property name="enabled">
         <bool>true</bool>
        </property>
@@ -67,7 +67,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="left_menu_tm">
+      <widget class="QPushButton" name="taskManagerBtn">
        <property name="enabled">
         <bool>true</bool>
        </property>
@@ -90,7 +90,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="left_menu_inbox">
+      <widget class="QPushButton" name="inboxBtn">
        <property name="enabled">
         <bool>true</bool>
        </property>
@@ -113,7 +113,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="left_menu_profile">
+      <widget class="QPushButton" name="profileBtn">
        <property name="enabled">
         <bool>true</bool>
        </property>
@@ -429,7 +429,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QToolButton" name="add_task_button">
+        <widget class="QToolButton" name="addTask">
          <property name="text">
           <string/>
          </property>
