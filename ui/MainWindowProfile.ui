@@ -61,7 +61,7 @@
        </property>
       </spacer>
      </item>
-     <item>
+     <item alignment="Qt::AlignHCenter">
       <widget class="QPushButton" name="projectsBtn">
        <property name="enabled">
         <bool>true</bool>
@@ -82,6 +82,9 @@
          <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
        <property name="text">
         <string>Projects</string>
        </property>
@@ -93,7 +96,7 @@
        </property>
       </widget>
      </item>
-     <item>
+     <item alignment="Qt::AlignHCenter">
       <widget class="QPushButton" name="taskManagerBtn">
        <property name="enabled">
         <bool>true</bool>
@@ -114,6 +117,9 @@
          <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
        <property name="text">
         <string>Task Manager</string>
        </property>
@@ -122,7 +128,7 @@
        </property>
       </widget>
      </item>
-     <item>
+     <item alignment="Qt::AlignHCenter">
       <widget class="QPushButton" name="profileBtn">
        <property name="enabled">
         <bool>true</bool>
@@ -142,6 +148,9 @@
          <bold>true</bold>
          <stylestrategy>PreferDefault</stylestrategy>
         </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
        </property>
        <property name="text">
         <string>Profile</string>
@@ -205,6 +214,9 @@
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
        </property>
        <property name="text">
         <string/>
