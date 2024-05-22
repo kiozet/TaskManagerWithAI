@@ -9,9 +9,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>712</width>
-    <height>666</height>
+    <width>835</width>
+    <height>694</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="font">
    <font>
@@ -49,7 +55,7 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_6">
      <property name="sizeConstraint">
-      <enum>QLayout::SetDefaultConstraint</enum>
+      <enum>QLayout::SetNoConstraint</enum>
      </property>
      <item>
       <widget class="QPushButton" name="projectsBtn">
@@ -198,6 +204,9 @@
    </item>
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_5">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
      <item>
       <widget class="QLabel" name="project_name_title">
        <property name="sizePolicy">
@@ -242,11 +251,20 @@
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetNoConstraint</enum>
+       </property>
        <item row="0" column="2">
         <widget class="QFrame" name="tasks_info">
          <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetNoConstraint</enum>
+          </property>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetNoConstraint</enum>
+            </property>
             <property name="leftMargin">
              <number>6</number>
             </property>
@@ -323,6 +341,9 @@
           </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetNoConstraint</enum>
+            </property>
             <property name="leftMargin">
              <number>6</number>
             </property>
@@ -417,8 +438,14 @@
           <set>Qt::ImhNone</set>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetNoConstraint</enum>
+          </property>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetNoConstraint</enum>
+            </property>
             <property name="leftMargin">
              <number>6</number>
             </property>
@@ -507,6 +534,9 @@
           </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_2">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetNoConstraint</enum>
+            </property>
             <property name="leftMargin">
              <number>6</number>
             </property>
@@ -565,7 +595,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <property name="sizeConstraint">
-        <enum>QLayout::SetFixedSize</enum>
+        <enum>QLayout::SetNoConstraint</enum>
        </property>
        <item>
         <widget class="QLabel" name="label_4">
