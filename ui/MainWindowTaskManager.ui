@@ -36,7 +36,7 @@
     border: 2px solid blue;
     border-radius: 4px;
     padding: 2px;
-    background-image: url(images/welcome.png);
+    background-color: rgb(12, 11, 11);
 }</string>
   </property>
   <property name="frameShape">
