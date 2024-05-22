@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>805</width>
-    <height>694</height>
+    <width>776</width>
+    <height>678</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -91,8 +91,11 @@
          <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
        <property name="styleSheet">
-        <string notr="true">setGeometry ( x, y, w * 0.5, h * 0.5 );</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Projects</string>
@@ -394,7 +397,7 @@
        <item row="0" column="1">
         <widget class="QLabel" name="pr_description">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
