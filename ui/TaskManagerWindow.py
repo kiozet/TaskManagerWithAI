@@ -7,6 +7,7 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtWidgets import QStyleFactory
 
 
 class Ui_Frame(object):
@@ -346,6 +347,7 @@ class Ui_Frame(object):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
+    app.setStyle('Fusion')
     Frame = QtWidgets.QFrame()
     ui = Ui_Frame()
     ui.setupUi(Frame)
