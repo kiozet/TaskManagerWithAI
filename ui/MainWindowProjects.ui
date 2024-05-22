@@ -73,7 +73,7 @@
        </property>
       </spacer>
      </item>
-     <item>
+     <item alignment="Qt::AlignHCenter">
       <widget class="QPushButton" name="projectsBtn">
        <property name="enabled">
         <bool>true</bool>
@@ -105,7 +105,7 @@
        </property>
       </widget>
      </item>
-     <item>
+     <item alignment="Qt::AlignHCenter">
       <widget class="QPushButton" name="taskManagerBtn">
        <property name="enabled">
         <bool>true</bool>
@@ -134,7 +134,7 @@
        </property>
       </widget>
      </item>
-     <item>
+     <item alignment="Qt::AlignHCenter">
       <widget class="QPushButton" name="profileBtn">
        <property name="enabled">
         <bool>true</bool>
