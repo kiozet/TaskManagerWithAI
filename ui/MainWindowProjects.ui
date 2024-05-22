@@ -122,29 +122,6 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="inboxBtn">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="font">
-       <font>
-        <family>.SF Soft Numeric</family>
-        <pointsize>13</pointsize>
-        <weight>75</weight>
-        <italic>false</italic>
-        <bold>true</bold>
-        <stylestrategy>PreferDefault</stylestrategy>
-       </font>
-      </property>
-      <property name="text">
-       <string>Inbox</string>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QPushButton" name="profileBtn">
       <property name="enabled">
        <bool>true</bool>
