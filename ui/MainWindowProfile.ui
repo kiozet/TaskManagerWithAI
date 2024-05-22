@@ -74,16 +74,27 @@
        </property>
        <property name="font">
         <font>
-         <family>.SF Soft Numeric</family>
-         <pointsize>13</pointsize>
+         <pointsize>-1</pointsize>
          <weight>75</weight>
          <italic>false</italic>
          <bold>true</bold>
-         <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
        <property name="layoutDirection">
         <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: blue;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color: white;
+}</string>
        </property>
        <property name="text">
         <string>Projects</string>
@@ -109,16 +120,27 @@
        </property>
        <property name="font">
         <font>
-         <family>.SF Soft Numeric</family>
-         <pointsize>13</pointsize>
+         <pointsize>-1</pointsize>
          <weight>75</weight>
          <italic>false</italic>
          <bold>true</bold>
-         <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
        <property name="layoutDirection">
         <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: blue;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color: white;
+}</string>
        </property>
        <property name="text">
         <string>Task Manager</string>
@@ -141,16 +163,27 @@
        </property>
        <property name="font">
         <font>
-         <family>.SF Soft Numeric</family>
-         <pointsize>13</pointsize>
+         <pointsize>-1</pointsize>
          <weight>75</weight>
          <italic>false</italic>
          <bold>true</bold>
-         <stylestrategy>PreferDefault</stylestrategy>
         </font>
        </property>
        <property name="layoutDirection">
         <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: blue;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+	color: white;
+}</string>
        </property>
        <property name="text">
         <string>Profile</string>
