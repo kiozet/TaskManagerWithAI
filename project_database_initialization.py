@@ -16,7 +16,8 @@ def projectInitialization(cursor: sqlite3.Cursor) -> bool:
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT,
             description TEXT,
-            date TEXT
+            date TEXT,
+            status TEXT
             )"""
             )
 
