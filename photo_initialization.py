@@ -13,8 +13,8 @@ def insert_blob(emp_id, name, photo, resume_file):
         cursor = sqlite_connection.cursor()
         print("Подключен к SQLite")
 
-        sqlite_insert_blob_query = """INSERT INTO new_employee
-                                  (id, name, photo, resume) VALUES (?, ?, ?, ?)"""
+        sqlite_insert_blob_query = """INSERT INTO users
+                                  (photo) VALUES (?)"""
 
         emp_photo = convert_to_binary_data(photo)
         resume = convert_to_binary_data(resume_file)
