@@ -44,7 +44,8 @@ with sqlite3.connect("Project.db") as db:
         login TEXT NOT NULL CHECK(login_check(login)),
         password TEXT NOT NULL CHECK(password_check(password)),
         name TEXT NOT NULL,
-        number_of_friends TEXT DEFAULT 0
+        number_of_friends TEXT DEFAULT 0,
+        photo BLOB
         )"""
     )
     cur.execute(
