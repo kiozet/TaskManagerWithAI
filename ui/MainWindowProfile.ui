@@ -32,11 +32,11 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">QFrame, QLabel, QToolTip {
-    border: 2px solid blue;
+   <string notr="true">QFrame{
+    border: 2px;
     border-radius: 4px;
     padding: 2px;
-    background-color: rgb(12, 11, 11);
+    background-color: #1F2833;
 }</string>
   </property>
   <property name="frameShape">
@@ -85,15 +85,15 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-    background-color: blue;
+    background-color: rgb(230, 230, 238);
     border-style: outset;
     border-width: 2px;
-    border-radius: 10px;
-    border-color: beige;
+    border-radius: 6px;
+    border-color: #45A29E;
     font: bold 14px;
-    min-width: 10em;
+    min-width: 6em;
     padding: 6px;
-	color: white;
+    color: #45A29E;
 }</string>
        </property>
        <property name="text">
@@ -131,15 +131,15 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-    background-color: blue;
+    background-color: rgb(230, 230, 238);
     border-style: outset;
     border-width: 2px;
-    border-radius: 10px;
-    border-color: beige;
+    border-radius: 6px;
+    border-color: #45A29E;
     font: bold 14px;
-    min-width: 10em;
+    min-width: 6em;
     padding: 6px;
-	color: white;
+    color: #45A29E;
 }</string>
        </property>
        <property name="text">
@@ -174,15 +174,15 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-    background-color: blue;
+    background-color: rgb(230, 230, 238);
     border-style: outset;
     border-width: 2px;
-    border-radius: 10px;
-    border-color: beige;
+    border-radius: 6px;
+    border-color: #45A29E;
     font: bold 14px;
-    min-width: 10em;
+    min-width: 6em;
     padding: 6px;
-	color: white;
+    color: #45A29E;
 }</string>
        </property>
        <property name="text">
@@ -220,6 +220,19 @@
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    background-color: #1F2834;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #45A29E;
+    font: bold 18px;
+    min-width: 6em;
+    padding: 6px;
+    color: white;
+}</string>
+         </property>
          <property name="text">
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
@@ -232,6 +245,19 @@
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    background-color: #1F2834;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #45A29E;
+    font: bold 18px;
+    min-width: 6em;
+    padding: 6px;
+  color: white;
+}</string>
          </property>
          <property name="text">
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Surname&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -251,6 +277,16 @@
        <property name="layoutDirection">
         <enum>Qt::LeftToRight</enum>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #1F2833;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #45A29E;
+}</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -268,6 +304,16 @@
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #1F2833;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #45A29E;
+}</string>
+           </property>
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;Email:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
@@ -280,6 +326,16 @@
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #1F2833;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #45A29E;
+}</string>
            </property>
            <property name="text">
             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -302,6 +358,16 @@ p, li { white-space: pre-wrap; }
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #1F2833;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #45A29E;
+}</string>
+           </property>
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;Your email&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
@@ -314,6 +380,16 @@ p, li { white-space: pre-wrap; }
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #1F2833;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #45A29E;
+}</string>
            </property>
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;Your ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>

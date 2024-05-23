@@ -83,7 +83,6 @@
        </property>
        <property name="font">
         <font>
-         <family>.SF Soft Numeric</family>
          <pointsize>-1</pointsize>
          <weight>75</weight>
          <italic>false</italic>
