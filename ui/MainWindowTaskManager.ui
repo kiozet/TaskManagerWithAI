@@ -39,10 +39,10 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QFrame{
-    border: 2px solid blue;
+    border: 2px;
     border-radius: 4px;
     padding: 2px;
-    background-color: rgb(0, 0, 100);
+    background-color: #1F2833;
 }</string>
   </property>
   <property name="frameShape">
@@ -95,15 +95,15 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-    background-color: rgb(0, 0, 220);
+    background-color: rgb(230, 230, 238);
     border-style: outset;
     border-width: 2px;
-    border-radius: 10px;
-    border-color: beige;
+    border-radius: 6px;
+    border-color: #45A29E;
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-  color: white;
+    color: #45A29E;
 }</string>
        </property>
        <property name="text">
@@ -138,15 +138,15 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-    background-color:rgb(0, 0, 220);
+    background-color: rgb(230, 230, 238);
     border-style: outset;
     border-width: 2px;
-    border-radius: 10px;
-    border-color: beige;
+    border-radius: 6px;
+    border-color: #45A29E;
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-  color: white;
+    color: #45A29E;
 }</string>
        </property>
        <property name="text">
@@ -190,15 +190,15 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-    background-color: rgb(0, 0, 220);
+    background-color: rgb(230, 230, 238);
     border-style: outset;
     border-width: 2px;
-    border-radius: 10px;
-    border-color: beige;
+    border-radius: 6px;
+    border-color: #45A29E;
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-  color: white;
+    color: #45A29E;
 }</string>
        </property>
        <property name="text">
@@ -253,11 +253,11 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel {
-    background-color: rgb(0, 0, 60);
+    background-color: #1F2834;
     border-style: outset;
     border-width: 1px;
     border-radius: 8px;
-    border-color: beige;
+    border-color: #45A29E;
     font: bold 18px;
     min-width: 6em;
     padding: 6px;
@@ -268,7 +268,7 @@
         <enum>QFrame::NoFrame</enum>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Project name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#5affef;&quot;&gt;Project name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::AutoText</enum>
@@ -288,6 +288,14 @@
        </property>
        <item row="0" column="2">
         <widget class="QFrame" name="tasks_info">
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+    border: 2px #6F6F6F;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #45A29E;
+}</string>
+         </property>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <property name="sizeConstraint">
            <enum>QLayout::SetNoConstraint</enum>
@@ -321,19 +329,19 @@
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel {
-    background-color: rgb(0, 0, 90);
+    background-color: #D1D1D1;
     border-style: outset;
-    border-width: 1px;
-    border-radius: 12px;
-    border-color: beige;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #919191;
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-  color: white;
+    color: black;
 }</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;All tasks:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#364d6e;&quot;&gt;All tasks:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -355,19 +363,19 @@
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel {
-    background-color: rgb(0, 0, 90);
+    background-color: #D1D1D1;
     border-style: outset;
-    border-width: 1px;
-    border-radius: 12px;
-    border-color: beige;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #919191;
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-  color: white;
+    color: black;
 }</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Done:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#354c6c;&quot;&gt;Done:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -389,19 +397,19 @@
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel {
-    background-color: rgb(0, 0, 90);
+    background-color: #D1D1D1;
     border-style: outset;
-    border-width: 1px;
-    border-radius: 12px;
-    border-color: beige;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #919191;
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-  color: white;
+    color: black;
 }</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Frozen:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#394d6d;&quot;&gt;Frozen:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -429,8 +437,18 @@
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #45A29E;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #1F2833;
+}</string>
+              </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;цифра&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;цифра&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -442,8 +460,18 @@
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #45A29E;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #1F2833;
+}</string>
+              </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;цифра&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;цифра&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -455,8 +483,18 @@
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #45A29E;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #1F2833;
+}</string>
+              </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;цифра&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;цифра&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -474,7 +512,13 @@
           </sizepolicy>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">QFrame{
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #45A29E;
+}</string>
          </property>
          <property name="text">
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;описание&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -482,7 +526,7 @@
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QWidget" name="project_info" native="true">
+        <widget class="QFrame" name="project_info">
          <property name="font">
           <font>
            <family>.SF Soft Numeric</family>
@@ -500,7 +544,13 @@
           <enum>Qt::NoContextMenu</enum>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">QFrame{
+    border: 2px #6F6F6F;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #45A29E;
+}
+</string>
          </property>
          <property name="inputMethodHints">
           <set>Qt::ImhNone</set>
@@ -538,19 +588,19 @@
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel {
-    background-color: rgb(0, 0, 90);
+    background-color: #D1D1D1;
     border-style: outset;
-    border-width: 1px;
-    border-radius: 12px;
-    border-color: beige;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #919191;
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-  color: white;
+    color: black;
 }</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Date added:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#304462;&quot;&gt;Date added:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -572,19 +622,19 @@
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel {
-    background-color: rgb(0, 0, 90);
+    background-color: #D1D1D1;
     border-style: outset;
-    border-width: 1px;
-    border-radius: 12px;
-    border-color: beige;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #919191;
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-  color: white;
+    color: black;
 }</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Deadline:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#364d6f;&quot;&gt;Deadline:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -606,19 +656,19 @@
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel {
-    background-color: rgb(0, 0, 90);
+    background-color: #D1D1D1;
     border-style: outset;
-    border-width: 1px;
-    border-radius: 12px;
-    border-color: beige;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #919191;
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-  color: white;
+    color: black;
 }</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Participants:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#344e6f;&quot;&gt;Participants:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -646,8 +696,18 @@
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #45A29E;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #1F2833;
+}</string>
+              </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;дата&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;дата&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -659,8 +719,18 @@
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #45A29E;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #1F2833;
+}</string>
+              </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;время&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;время&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -672,8 +742,18 @@
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #45A29E;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #1F2833;
+}</string>
+              </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;твоя семья&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#ffffff;&quot;&gt;твоя семья&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -708,14 +788,16 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
-    border: 2px solid blue;
-    border-radius: 4px;
     padding: 2px;
-    background-color: rgb(0, 0, 60);
+    background-color: #1F2833;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #45A29E;
 }</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;To do&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00ffec;&quot;&gt;To do&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -724,6 +806,18 @@
        </item>
        <item>
         <widget class="QToolButton" name="addTask">
+         <property name="styleSheet">
+          <string notr="true">QToolButton{
+    border-radius: 4px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: #45A29E;
+    padding: 2px;
+    background-color: #1F2833;
+}
+</string>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -752,14 +846,16 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
-    border: 2px solid blue;
-    border-radius: 4px;
     padding: 2px;
-    background-color: rgb(0, 0, 60);
+    background-color: #1F2833;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #45A29E;
 }</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;In progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00ffed;&quot;&gt;In progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -785,15 +881,16 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
-    border: 2px solid blue;
-    border-radius: 4px;
     padding: 2px;
-    background-color: rgb(0, 0, 60);
-}
-</string>
+    background-color: #1F2833;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #45A29E;
+}</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Closed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00ffec;&quot;&gt;Closed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -819,14 +916,16 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
-    border: 2px solid blue;
-    border-radius: 4px;
     padding: 2px;
-    background-color: rgb(0, 0, 60);
+    background-color: #1F2833;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #45A29E;
 }</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Frozen&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00ffec;&quot;&gt;Frozen&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -847,10 +946,13 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
-    border: 2px solid blue;
     border-radius: 4px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: white;
     padding: 2px;
-    background-color: rgb(0, 0, 60);
+    background-color: rgb(230, 230, 238);
 }
 </string>
          </property>
@@ -869,12 +971,14 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
-    border: 2px solid blue;
     border-radius: 4px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: white;
     padding: 2px;
-    background-color: rgb(0, 0, 60);
-}
-</string>
+    background-color: rgb(230, 230, 238);
+}</string>
          </property>
          <property name="text">
           <string/>
@@ -891,12 +995,14 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
-    border: 2px solid blue;
     border-radius: 4px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: white;
     padding: 2px;
-    background-color: rgb(0, 0, 60);
-}
-</string>
+    background-color: rgb(230, 230, 238);
+}</string>
          </property>
          <property name="text">
           <string/>
@@ -913,12 +1019,14 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QLabel{
-    border: 2px solid blue;
     border-radius: 4px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: white;
     padding: 2px;
-    background-color: rgb(0, 0, 60);
-}
-</string>
+    background-color: rgb(230, 230, 238);
+}</string>
          </property>
          <property name="text">
           <string/>
