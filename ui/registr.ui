@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>551</width>
-    <height>323</height>
+    <width>469</width>
+    <height>250</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -31,10 +31,16 @@
    <item>
     <widget class="QLabel" name="GIF">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
      </property>
      <property name="text">
       <string/>
