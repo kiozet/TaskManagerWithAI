@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>268</width>
-    <height>190</height>
+    <width>491</width>
+    <height>185</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,6 +18,14 @@
   </property>
   <property name="windowTitle">
    <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame{
+    border: 2px;
+    border-radius: 4px;
+    padding: 2px;
+    background-color: #1F2833;
+}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -30,11 +38,27 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background-color: #1F2834;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #45A29E;
+    font: bold 18px;
+    min-width: 6em;
+    padding: 6px;
+  color: white;
+}</string>
+     </property>
      <property name="text">
-      <string>Welcome to Application</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00ffff;&quot;&gt;Welcome to Application&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </item>
@@ -51,6 +75,19 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background-color: #D1D1D1;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #919191;
+    font: bold 14px;
+    min-width: 6em;
+    padding: 6px;
+    color: black;
+}</string>
+       </property>
        <property name="text">
         <string>UserName:</string>
        </property>
@@ -64,6 +101,18 @@
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+    border-radius: 4px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: white;
+    padding: 2px;
+    background-color: rgb(230, 230, 238);
+}
+</string>
+       </property>
       </widget>
      </item>
      <item row="1" column="0">
@@ -73,6 +122,19 @@
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background-color: #D1D1D1;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #919191;
+    font: bold 14px;
+    min-width: 6em;
+    padding: 6px;
+    color: black;
+}</string>
        </property>
        <property name="text">
         <string>Password:</string>
@@ -86,6 +148,18 @@
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+    border-radius: 4px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: white;
+    padding: 2px;
+    background-color: rgb(230, 230, 238);
+}
+</string>
        </property>
        <property name="echoMode">
         <enum>QLineEdit::Password</enum>
@@ -128,10 +202,23 @@
      <item>
       <widget class="QPushButton" name="login_button_auth">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(230, 230, 238);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 6px;
+    border-color: #45A29E;
+    font: bold 14px;
+    min-width: 6em;
+    padding: 6px;
+    color: #45A29E;
+}</string>
        </property>
        <property name="text">
         <string>Login</string>
@@ -141,10 +228,23 @@
      <item>
       <widget class="QPushButton" name="cancel_button_auth">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(230, 230, 238);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 6px;
+    border-color: #45A29E;
+    font: bold 14px;
+    min-width: 6em;
+    padding: 6px;
+    color: #45A29E;
+}</string>
        </property>
        <property name="text">
         <string>Cancel</string>
