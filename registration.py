@@ -16,6 +16,7 @@ def createTable(connection: sqlite3.Connection, cursor: sqlite3.Cursor) -> bool:
         password TEXT NOT NULL,
         name TEXT NOT NULL,
         surname TEXT,
+        photo BLOB,
         allTasks INTEGER DEFAULT 0,
         doneTasks INTEGER DEFAULT 0,
         frozenTasks INTEGER DEFAULT 0
