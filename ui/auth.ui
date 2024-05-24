@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>403</width>
-    <height>272</height>
+    <width>950</width>
+    <height>774</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -21,7 +21,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QFrame{
-	background-image: url(TaskManagerWithAI\content\raccoon.jpg);
+	background-image: url(../content/raccoon.jpg);
     border: 2px;
     border-radius: 4px;
     padding: 2px;
@@ -86,11 +86,11 @@
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-    color: black;
+    color: white;
 }</string>
        </property>
        <property name="text">
-        <string>UserName:</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;UserName:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -134,7 +134,7 @@
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-    color: black;
+    color: white;
 }</string>
        </property>
        <property name="text">
