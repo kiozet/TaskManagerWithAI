@@ -257,7 +257,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../content/content.qrc"/>
+  <include location="../content/qtContent.qrc"/>
  </resources>
  <connections/>
 </ui>
