@@ -24,7 +24,7 @@
     border: 2px;
     border-radius: 4px;
     padding: 2px;
-	border-image: url(../content/raccoon.jpg) 0 0 0 0 stretch stretch
+	border-image: url(&quot;../content/raccoon.jpg&quot;) 0 0 0 0 stretch stretch
 
 }</string>
   </property>
