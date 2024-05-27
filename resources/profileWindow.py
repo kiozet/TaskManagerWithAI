@@ -1,6 +1,8 @@
 from PyQt6.QtWidgets import *
 from PyQt6 import uic
 
+import resources.configUpdater
+
 
 class ProfileMainWindow(QFrame):
     def __init__(self) -> None:
@@ -12,6 +14,16 @@ class ProfileMainWindow(QFrame):
         self.taskManagerBtn.clicked.connect(self.switchToTaskManager)
         
         self.profileBtn.setStyleSheet('color: blue')
+        config = resources.configUpdater.Config()
+        
+        username, email = config.returnConfigStats()
+        
+        try:
+            self.usernameLabel.setText(username)
+            self.email_your_profile(email)
+            
+        except Exception as ex:
+            print(f"Error: {ex}")
         
         
     def setWidget(self, widget):

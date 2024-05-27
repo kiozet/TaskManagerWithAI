@@ -16,3 +16,12 @@ class Config:
         
     def returnDBStatus(self) -> bool:
         return self.db_state
+    
+    def returnConfigStats(self) -> tuple:
+        with open("content/config.cfg", 'r') as config:
+            config = config.read().split("\n")
+            print(config)
+            username = config[0]
+            email = config[1]
+        
+        return {username, email}
