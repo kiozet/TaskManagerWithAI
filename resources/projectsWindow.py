@@ -40,15 +40,19 @@ class ProjectsMainWindow(QFrame):
         
         self.projectsDir = "projects/"
         
+        self.setProjectList()
+        
+            
+        
+    def setProjectList(self):
         for filename in os.listdir(self.projectsDir):
             self.id_task += 1
             widget = TaskWidget(self.id_task)
-            self.TaskWidgetLayout.addWidget(widget)
+            self.projects_layout.addWidget(widget)
             widget.delete.connect(self.DeleteWidget)
             self.task_widgets[self.id_task] = widget
+        
             
-        
-        
     def addNewProject(self):
         print(os.path.basename(self.projectsDir))
         
