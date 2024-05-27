@@ -43,6 +43,10 @@ class Ui_TaskWidget(object):
         self.horizontalLayout.addItem(spacerItem)
         self.pushButtonDelete = QtWidgets.QPushButton(parent=self.groupBox)
         self.pushButtonDelete.setObjectName("pushButtonDelete")
+        
+        self.markProject = QtWidgets.QPushButton(parent=self.groupBox)
+        self.markProject.setObjectName("markProject")
+        
         self.horizontalLayout.addWidget(self.pushButtonDelete)
         self.horizontalLayout_2.addWidget(self.groupBox)
 

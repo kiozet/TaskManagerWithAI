@@ -2,6 +2,7 @@ from PyQt6.QtWidgets import *
 from PyQt6 import uic
 from resources.addTaskWindow import TaskManager
 
+import resources.configUpdater as configUpdater
 
 class TaskMainWindow(QFrame):
     def __init__(self) -> None:
@@ -15,8 +16,23 @@ class TaskMainWindow(QFrame):
         self.profileBtn.clicked.connect(self.switchToProfileWindow)
         
         
+        
         self.taskManagerBtn.setStyleSheet('color: blue')
         
+        config = configUpdater.Config()
+        
+        self.current_project = config.returnConfigProjectName()
+        
+        if config.returnConfigProjectName() == '':
+            pass
+        
+        else:
+            self.project_name_title.setText(config.returnConfigProjectName())
+            
+    def setCurProject(self):
+        config = configUpdater.Config()
+        self.current_project = config.returnConfigProjectName()
+        self.project_name_title.setText(config.returnConfigProjectName())
         
     def setWidget(self, widget):
         self.widget = widget
@@ -26,10 +42,13 @@ class TaskMainWindow(QFrame):
         self.taskManagerWindow.show()
         
     def switchToProfileWindow(self):
+        self.setCurProject()
         self.widget.setCurrentIndex(2)
     
     def switchToInboxWindow(self):
+        self.setCurProject()
         self.widget.setCurrentIndex(3)
     
     def switchToProjectsPage(self):
+        self.setCurProject()
         self.widget.setCurrentIndex(1)

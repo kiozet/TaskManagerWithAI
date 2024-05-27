@@ -25,3 +25,23 @@ class Config:
                 email = config[1]
             
             return {username, email}
+        
+        
+    def returnConfigProjectName(self) -> str:
+        if os.path.isfile("content/config.cfg"):
+            with open("content/config.cfg", 'r') as config:
+                try:
+                    config = config.read().split("\n")
+                    projectName = config[3]
+            
+                    return projectName
+                
+                except:
+                    return ''
+                
+    def writeCurrentProject(self, currentProjectTitle: str):
+        username, email = self.returnConfigStats()
+        
+        with open('content/config.cfg', 'w') as config:
+                config.write(f"{username}\n{email}\n{currentProjectTitle}")
+                config.close()

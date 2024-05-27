@@ -3,7 +3,9 @@ from PyQt6 import uic, QtCore
 from PyQt6 import QtWidgets
 from PyQt6.QtCore import Qt, pyqtSignal
 from PyQt6.QtWidgets import QVBoxLayout, QWidget, QGroupBox
+
 import resources.taskWidget as taskWidget
+import resources.configUpdater as configUpdater
 
 import os
 
@@ -19,9 +21,14 @@ class TaskWidget(QtWidgets.QWidget, taskWidget.Ui_TaskWidget):
         self.project_title = project_title
         self.groupBox.setTitle(str(self.project_title[:-3:]))
         self.pushButtonDelete.clicked.connect(self.DeleteWidget)
+        self.markProject.clicked.connect(self.markProjectFunc)
 
     def DeleteWidget(self):
         self.delete.emit(self.id_task)
+        
+    def markProjectFunc(self):
+        config = configUpdater.Config()
+        config.writeCurrentProject(self.project_title)
 
 
 class ProjectsMainWindow(QFrame):
