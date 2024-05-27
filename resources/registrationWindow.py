@@ -6,6 +6,7 @@ import time
 import os
 
 from resources.database_helper import *
+import resources.vadlidationFunc
 
 
 class LineEditData(QRunnable):
@@ -75,8 +76,11 @@ class RegistrationWindow(QFrame):
         email = self.email_text_reg.text()
         password = self.password_text_reg.text()
         
-        userDatabaseInitialization()
-        registrationDataInsert(email=email, login=userName, password=password)
+        if resources.vadlidationFunc.emailValidation(email):
+            print(1)
+            userDatabaseInitialization()
+            registrationDataInsert(email=email, login=userName, password=password)
+            print(2)
         
         
     def gifStateSignalEmit(self, state: bool) -> None:

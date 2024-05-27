@@ -74,13 +74,18 @@ def registrationDataInsert(
     connection = sqlite3.connect("content/users.db")
     cursor = connection.cursor()
     try:
-        sqliteInsertWithParam = """INSERT INTO users (email, login, password) VALUES (?, ?, ?)
-"""
-        dataTuple = (email, login, password)
-        cursor.execute(sqliteInsertWithParam, dataTuple)
+        cursor.execute(
+                    "INSERT INTO users (email, login, password) VALUES (?, ?)",
+                    (
+                        email,
+                        login,
+                        password,
+                    ),
+                )
         connection.commit()
-        cursor.close()
+        connection.close()
         return True
+    
     except Exception as ex:
         print(ex)
         return False
