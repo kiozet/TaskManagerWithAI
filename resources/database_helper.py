@@ -58,7 +58,7 @@ def taskDataInsert(
 ) -> bool:
     try:
         connection = sqlite3.connect("project.db")
-        sqliteInsertWithParam = """INSERT INTO task (title, description, status, dateCreated, deadline) VALUES (?, ?, onProggress, ?, ?)
+        sqliteInsertWithParam = """INSERT INTO tasks (title, description, status, dateCreated, deadline, priority) VALUES (?, ?, onProggress, ?, ?)
 """
         dataTuple = (title, desription, dateCreated, deadline)
         cursor.execute(sqliteInsertWithParam, dataTuple)
