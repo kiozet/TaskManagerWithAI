@@ -27,7 +27,7 @@
     background-color: #1F2833;
 }</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout_2">
+  <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <widget class="QLabel" name="GIF">
      <property name="sizePolicy">
