@@ -211,60 +211,24 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLabel" name="name_label_profile">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel {
-    background-color: #1F2834;
+      <layout class="QHBoxLayout" name="horizontalLayout"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+    padding: 2px;
+    background-color: #1F2833;
     border-style: outset;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: 8px;
     border-color: #45A29E;
-    font: bold 18px;
-    min-width: 6em;
-    padding: 6px;
-    color: white;
 }</string>
-         </property>
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="surname_label_profile">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel {
-    background-color: #1F2834;
-    border-style: outset;
-    border-width: 1px;
-    border-radius: 8px;
-    border-color: #45A29E;
-    font: bold 18px;
-    min-width: 6em;
-    padding: 6px;
-  color: white;
-}</string>
-         </property>
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Surname&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Your profile&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QLabel" name="label">
@@ -319,33 +283,6 @@
            </property>
           </widget>
          </item>
-         <item>
-          <widget class="QLabel" name="telegram_label_profile">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-    padding: 2px;
-    background-color: #1F2833;
-    border-style: outset;
-    border-width: 2px;
-    border-radius: 8px;
-    border-color: #45A29E;
-}</string>
-           </property>
-           <property name="text">
-            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;Login:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-         </item>
         </layout>
        </item>
        <item>
@@ -370,29 +307,6 @@ p, li { white-space: pre-wrap; }
            </property>
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;Your email&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="telegram_your_profile">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-    padding: 2px;
-    background-color: #1F2833;
-    border-style: outset;
-    border-width: 2px;
-    border-radius: 8px;
-    border-color: #45A29E;
-}</string>
-           </property>
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;Your login&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
