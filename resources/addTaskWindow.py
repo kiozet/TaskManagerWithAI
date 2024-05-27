@@ -43,5 +43,7 @@ def GeneratingPoints(title_task: str) -> str:
     messages.append(HumanMessage(content=title_task))
     answer = giga(messages)
     messages.append(answer)
+    
+    print(answer.content)
 
     return answer.content
