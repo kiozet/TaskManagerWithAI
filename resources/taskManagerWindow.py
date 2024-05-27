@@ -7,12 +7,11 @@ class TaskMainWindow(QFrame):
     def __init__(self) -> None:
         super(TaskMainWindow, self).__init__()
         
-        self.ui = uic.loadUi("ui/MainWindowTaskManager1.0.ui", self)
+        self.ui = uic.loadUi("ui/MainWindowTaskManager.ui", self)
         
         self.widget = None
         self.addTask.clicked.connect(self.addNewTask)
         self.projectsBtn.clicked.connect(self.switchToProjectsPage)
-        self.inboxBtn.clicked.connect(self.switchToInboxWindow)
         self.profileBtn.clicked.connect(self.switchToProfileWindow)
         
         

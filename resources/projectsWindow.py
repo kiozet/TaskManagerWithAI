@@ -5,12 +5,11 @@ from PyQt6 import uic, QtCore
 class ProjectsMainWindow(QFrame):
     def __init__(self) -> None:
         super(ProjectsMainWindow, self).__init__()
-        self.ui = uic.loadUi("ui/MainWindowProjects1.0.ui", self)
+        self.ui = uic.loadUi("ui/MainWindowProjects.ui", self)
         
         self.widget = None
         self.profileBtn.clicked.connect(self.switchToProfilePage)
         self.taskManagerBtn.clicked.connect(self.switchToTaskManager)
-        self.inboxBtn.clicked.connect(self.switchToInboxWindow)
         
         self.projectsBtn.setStyleSheet('color: blue')
         

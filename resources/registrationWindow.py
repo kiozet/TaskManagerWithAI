@@ -62,6 +62,8 @@ class RegistrationWindow(QFrame):
 
         self.threadpool = QThreadPool()
         self.gifAnimation()
+        
+        self.confirm_button_reg.clicked.connect(self.reg.check)
 
         self.gifStateSignal.connect(self.gifStateUpdater)
 
@@ -81,10 +83,3 @@ class RegistrationWindow(QFrame):
     
     def setWidget(self, widget):
         self.widget = widget
-
-
-# if __name__ == "__main__":
-#     app = QApplication(sys.argv)
-#     registrationWindow = RegistrationWindow()
-#     registrationWindow.show()
-#     app.exec()

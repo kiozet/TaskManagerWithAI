@@ -4,7 +4,6 @@ import sys
 from resources.projectsWindow import ProjectsMainWindow
 from resources.taskManagerWindow import TaskMainWindow
 from resources.profileWindow import ProfileMainWindow
-from resources.inboxWindow import InboxMainWindow
 from resources.configUpdater import Config
 from resources.registrationWindow import RegistrationWindow
 
@@ -17,18 +16,15 @@ if __name__ == "__main__":
     taskWindow = TaskMainWindow()
     projectsWindow = ProjectsMainWindow()
     profileWindow = ProfileMainWindow()
-    inboxWindow = InboxMainWindow()
     registrationWindow = RegistrationWindow()
     config = Config()
     
     widget.addWidget(taskWindow)
     widget.addWidget(projectsWindow)
     widget.addWidget(profileWindow)
-    widget.addWidget(inboxWindow)
     widget.addWidget(registrationWindow)
     
     taskWindow.setWidget(widget)
-    inboxWindow.setWidget(widget)
     profileWindow.setWidget(widget)
     projectsWindow.setWidget(widget)
     registrationWindow.setWidget(widget)
@@ -40,7 +36,7 @@ if __name__ == "__main__":
         
     else:
         # reg/auth window
-        widget.setCurrentIndex(4)
+        widget.setCurrentIndex(3)
         widget.show()
         app.exec()
 
