@@ -6,7 +6,7 @@ class Config:
     def __init__(self) -> None:
         super().__init__()
         
-        db_path = "content/db.db"
+        db_path = "content/users.db"
         self.db_state = False
         
         if os.path.isfile(db_path):

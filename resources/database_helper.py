@@ -39,14 +39,16 @@ def userDatabaseInitialization() -> bool:
             """CREATE TABLE IF NOT EXISTS users(
             email TEXT NOT NULL,
             login TEXT NOT NULL,
-            password TEXT NOT NULL,            
+            password TEXT NOT NULL          
             )"""
         )
         connection.commit()
         cursor.close()
         connection.close()
         return True
+    
     except Exception as ex:
+        print(f"Rised error: {ex}!")
         return False
 
 
@@ -75,7 +77,7 @@ def registrationDataInsert(
     cursor = connection.cursor()
     try:
         cursor.execute(
-                    "INSERT INTO users (email, login, password) VALUES (?, ?)",
+                    "INSERT INTO users (email, login, password) VALUES (?, ?, ?)",
                     (
                         email,
                         login,

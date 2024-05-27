@@ -77,10 +77,10 @@ class RegistrationWindow(QFrame):
         password = self.password_text_reg.text()
         
         if resources.vadlidationFunc.emailValidation(email):
-            print(1)
             userDatabaseInitialization()
             registrationDataInsert(email=email, login=userName, password=password)
-            print(2)
+            self.widget.setCurrentIndex(2)
+            
         
         
     def gifStateSignalEmit(self, state: bool) -> None:
