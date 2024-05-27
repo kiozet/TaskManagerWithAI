@@ -24,10 +24,12 @@ class TaskMainWindow(QFrame):
         self.current_project = config.returnConfigProjectName()
         
         if config.returnConfigProjectName() == '':
-            pass
+            self.project_name_title.setText("Выберите проект!")
         
         else:
+            print(config.returnConfigProjectName())
             self.project_name_title.setText(config.returnConfigProjectName())
+            
             
     def setCurProject(self):
         config = configUpdater.Config()
