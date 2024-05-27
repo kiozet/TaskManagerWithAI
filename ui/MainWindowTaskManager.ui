@@ -32,7 +32,7 @@
    <bool>false</bool>
   </property>
   <property name="windowTitle">
-   <string notr="true" extracomment=" ">TaskManager</string>
+   <string extracomment=" ">Frame</string>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
