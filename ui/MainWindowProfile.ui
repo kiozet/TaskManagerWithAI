@@ -26,7 +26,7 @@
    <bool>false</bool>
   </property>
   <property name="windowTitle">
-   <string>Frame</string>
+   <string notr="true">TaskManager</string>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
@@ -214,7 +214,7 @@
       <layout class="QHBoxLayout" name="horizontalLayout"/>
      </item>
      <item>
-      <widget class="QLabel" name="usernameLabel">
+      <widget class="QLabel" name="label_2">
        <property name="styleSheet">
         <string notr="true">QLabel{
     padding: 2px;
@@ -254,8 +254,17 @@
        <property name="text">
         <string/>
        </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
        <property name="pixmap">
         <pixmap resource="resources.qrc">:/content/raccoon.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
