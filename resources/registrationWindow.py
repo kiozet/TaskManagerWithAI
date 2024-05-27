@@ -3,6 +3,10 @@ from PyQt6 import uic
 from PyQt6.QtGui import QMovie
 from PyQt6.QtCore import pyqtSignal, pyqtSlot, QRunnable, QThreadPool
 import time
+import os
+
+from resources.database_helper import *
+import resources.vadlidationFunc
 
 
 class LineEditData(QRunnable):
@@ -63,10 +67,22 @@ class RegistrationWindow(QFrame):
         self.threadpool = QThreadPool()
         self.gifAnimation()
         
-        self.confirm_button_reg.clicked.connect(self.reg.check)
+        self.confirm_button_reg.clicked.connect(self.regCheck)
 
         self.gifStateSignal.connect(self.gifStateUpdater)
 
+    def regCheck(self):
+        userName = self.usr_name_text_reg.text()
+        email = self.email_text_reg.text()
+        password = self.password_text_reg.text()
+        
+        if resources.vadlidationFunc.emailValidation(email):
+            userDatabaseInitialization()
+            registrationDataInsert(email=email, login=userName, password=password)
+            self.widget.setCurrentIndex(2)
+            
+        
+        
     def gifStateSignalEmit(self, state: bool) -> None:
         self.gifStateSignal.emit(state)
 

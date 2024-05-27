@@ -17,7 +17,11 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
+<<<<<<< HEAD
    <string notr="true">TaskManager</string>
+=======
+   <string>hui</string>
+>>>>>>> 4f8708d16f4d333f0068dbf4a83c5f2fd77f56ab
   </property>
   <property name="styleSheet">
    <string notr="true">QFrame{
@@ -255,6 +259,9 @@
          </item>
          <item>
           <widget class="QPushButton" name="confirm_button_reg">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
              <horstretch>0</horstretch>
