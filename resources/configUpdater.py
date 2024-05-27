@@ -32,7 +32,7 @@ class Config:
             with open("content/config.cfg", 'r') as config:
                 try:
                     config = config.read().split("\n")
-                    projectName = config[3]
+                    projectName = config[2]
             
                     return projectName
                 
