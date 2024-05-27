@@ -6,6 +6,9 @@ from PyQt6.QtWidgets import QVBoxLayout, QWidget, QGroupBox
 
 import resources.taskWidget as taskWidget
 import resources.configUpdater as configUpdater
+from resources.addProjectWindow import AddProjectWindow
+
+import sqlite3
 
 import os
 
@@ -72,6 +75,8 @@ class ProjectsMainWindow(QFrame):
             os.remove(f'projects/{project_title}')
             
     def addNewProject(self):
+        addProjectWindow = AddProjectWindow()
+        addProjectWindow.show()
         self.setProjectList()
         
     def setWidget(self, widget):

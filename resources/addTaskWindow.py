@@ -5,10 +5,10 @@ from langchain.chat_models.gigachat import GigaChat
 import time
 
 
-class TaskManager(QWidget):
+class AddTaskWindow(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi('GenerationTaskWindow.ui', self)
+        uic.loadUi('ui/GenerationTaskWindow.ui', self)
         
         self.generateBtn.clicked.connect(self.AddTitleTask)
         

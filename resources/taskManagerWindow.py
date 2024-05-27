@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import *
 from PyQt6 import uic
-from resources.addTaskWindow import TaskManager
+from resources.addTaskWindow import AddTaskWindow
 
 import resources.configUpdater as configUpdater
 
@@ -27,7 +27,12 @@ class TaskMainWindow(QFrame):
             self.project_name_title.setText("Выберите проект!")
         
         else:
-            self.project_name_title.setText(config.returnConfigProjectName()[:-3])
+            
+            try:
+                self.project_name_title.setText(config.returnConfigProjectName()[:-3])
+                
+            except:
+                pass
             
             
     def setCurProject(self):
@@ -39,7 +44,7 @@ class TaskMainWindow(QFrame):
         self.widget = widget
         
     def addNewTask(self):
-        self.taskManagerWindow = TaskManager()
+        self.taskManagerWindow = AddTaskWindow()
         self.taskManagerWindow.show()
         
     def switchToProfileWindow(self):
