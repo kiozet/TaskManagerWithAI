@@ -46,8 +46,10 @@ class Ui_TaskWidget(object):
         
         self.markProject = QtWidgets.QPushButton(parent=self.groupBox)
         self.markProject.setObjectName("markProject")
+        self.markProject.setText("Choose")
         
         self.horizontalLayout.addWidget(self.pushButtonDelete)
+        self.horizontalLayout.addWidget(self.markProject)
         self.horizontalLayout_2.addWidget(self.groupBox)
 
         self.retranslateUi(TaskWidget)
