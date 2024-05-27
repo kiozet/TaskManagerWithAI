@@ -16,7 +16,8 @@ class TaskWidget(QtWidgets.QWidget, taskWidget.Ui_TaskWidget):
         super().__init__()
         self.setupUi(self)
         self.id_task = id_task
-        self.groupBox.setTitle(str(project_title))
+        self.project_title = project_title
+        self.groupBox.setTitle(str(self.project_title[2::]))
         self.pushButtonDelete.clicked.connect(self.DeleteWidget)
 
     def DeleteWidget(self):
@@ -53,11 +54,15 @@ class ProjectsMainWindow(QFrame):
     
     def DeleteWidget(self, id_task: int):
         widget = self.task_widgets.get(id_task)
+        project_title = self.task_widgets.get(project_title)
+        
         if widget:
             self.projects_layout.removeWidget(widget)
             widget.deleteLater()
 
             del self.task_widgets[id_task]
+            
+            os.remove(f'projects/{project_title}')
             
     def addNewProject(self):
         self.setProjectList()

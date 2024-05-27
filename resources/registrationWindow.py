@@ -60,6 +60,7 @@ class RegistrationWindow(QFrame):
         self.ui = uic.loadUi("ui/registr.ui", self)
         
         self.widget = None
+        self.profilePage = None
         
         self.movie = QMovie("content/pedro-racoon.gif")
         self.GIF.setMovie(self.movie)
@@ -85,8 +86,9 @@ class RegistrationWindow(QFrame):
                 config.close()
                 
             self.widget.setCurrentIndex(2)
-            
-        
+    
+    def getProfilePage(self, profile) -> None:
+        self.profilePage = profile
         
     def gifStateSignalEmit(self, state: bool) -> None:
         self.gifStateSignal.emit(state)

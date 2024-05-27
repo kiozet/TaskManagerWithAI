@@ -14,26 +14,32 @@ class ProfileMainWindow(QFrame):
         self.taskManagerBtn.clicked.connect(self.switchToTaskManager)
         
         self.profileBtn.setStyleSheet('color: blue')
-        config = resources.configUpdater.Config()
+        self.config = resources.configUpdater.Config() 
         
-        username, email = config.returnConfigStats()
+        self.setProfileInfo()
         
+        
+    def setProfileInfo(self):
         try:
+            username, email = self.config.returnConfigStats()
+            
             self.usernameLabel.setText(username)
             self.email_your_profile.setText(email)
             
         except Exception as ex:
             print(f"Error: {ex}")
         
-        
     def setWidget(self, widget):
         self.widget = widget
         
     def switchToInboxWindow(self):
         self.widget.setCurrentIndex(3)
+        self.setProfileInfo()
     
     def switchToTaskManager(self):
         self.widget.setCurrentIndex(0)
+        self.setProfileInfo()
     
     def switchToProjectsPage(self):
         self.widget.setCurrentIndex(1)
+        self.setProfileInfo()

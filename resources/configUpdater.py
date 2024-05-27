@@ -18,9 +18,10 @@ class Config:
         return self.db_state
     
     def returnConfigStats(self) -> tuple:
-        with open("content/config.cfg", 'r') as config:
-            config = config.read().split("\n")
-            username = config[0]
-            email = config[1]
-        
-        return {username, email}
+        if os.path.isfile("content/config.cfg"):
+            with open("content/config.cfg", 'r') as config:
+                config = config.read().split("\n")
+                username = config[0]
+                email = config[1]
+            
+            return {username, email}
