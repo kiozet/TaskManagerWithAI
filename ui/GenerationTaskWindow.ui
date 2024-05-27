@@ -94,7 +94,7 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>132</width>
+           <width>118</width>
            <height>0</height>
           </size>
          </property>
@@ -184,7 +184,8 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">calendarWidget{
+      <string notr="true">QWidget
+{
     background-color: white;
 }</string>
      </property>

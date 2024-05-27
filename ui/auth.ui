@@ -24,8 +24,7 @@
     border: 2px;
     border-radius: 4px;
     padding: 2px;
-	border-image: url(&quot;../content/raccoon.jpg&quot;) 0 0 0 0 stretch stretch
-
+    background-color: #1F2833;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
@@ -86,11 +85,11 @@
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-    color: white;
+    color: black;
 }</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;UserName:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;UserName:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -134,7 +133,7 @@
     font: bold 14px;
     min-width: 6em;
     padding: 6px;
-    color: white;
+    color: black;
 }</string>
        </property>
        <property name="text">
