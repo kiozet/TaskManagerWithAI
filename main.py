@@ -29,6 +29,8 @@ if __name__ == "__main__":
     projectsWindow.setWidget(widget)
     registrationWindow.setWidget(widget)
     
+    registrationWindow.getProfilePage(profile=profileWindow)
+    
     if config.returnDBStatus():
         # task manager window
         widget.show()

@@ -12,11 +12,12 @@ class TaskWidget(QtWidgets.QWidget, taskWidget.Ui_TaskWidget):
 
     delete = pyqtSignal(int)
 
-    def __init__(self, id_task: int):
+    def __init__(self, id_task: int, project_title: str) -> None:
         super().__init__()
         self.setupUi(self)
         self.id_task = id_task
-        self.groupBox.setTitle(str(id_task))
+        self.project_title = project_title
+        self.groupBox.setTitle(str(self.project_title[:-3:]))
         self.pushButtonDelete.clicked.connect(self.DeleteWidget)
 
     def DeleteWidget(self):
@@ -40,21 +41,31 @@ class ProjectsMainWindow(QFrame):
         
         self.projectsDir = "projects/"
         
-        self.setProjectList()
-        
+        self.setProjectList()     
             
         
     def setProjectList(self):
         for filename in os.listdir(self.projectsDir):
             self.id_task += 1
-            widget = TaskWidget(self.id_task)
+            widget = TaskWidget(self.id_task, filename)
             self.projects_layout.addWidget(widget)
             widget.delete.connect(self.DeleteWidget)
             self.task_widgets[self.id_task] = widget
+    
+    def DeleteWidget(self, id_task: int):
+        widget = self.task_widgets.get(id_task)
+        project_title = widget.groupBox.title() + '.db'
         
+        if widget:
+            self.projects_layout.removeWidget(widget)
+            widget.deleteLater()
+
+            del self.task_widgets[id_task]
+            
+            os.remove(f'projects/{project_title}')
             
     def addNewProject(self):
-        print(os.path.basename(self.projectsDir))
+        self.setProjectList()
         
     def setWidget(self, widget):
         self.widget = widget
