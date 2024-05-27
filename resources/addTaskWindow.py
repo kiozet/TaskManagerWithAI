@@ -8,7 +8,7 @@ import time
 class TaskManager(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi('ui/taskManager.ui', self)
+        uic.loadUi('GenerationTaskWindow.ui', self)
         
         self.generateBtn.clicked.connect(self.AddTitleTask)
         

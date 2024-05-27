@@ -27,14 +27,13 @@ class TaskMainWindow(QFrame):
             self.project_name_title.setText("Выберите проект!")
         
         else:
-            print(config.returnConfigProjectName())
-            self.project_name_title.setText(config.returnConfigProjectName())
+            self.project_name_title.setText(config.returnConfigProjectName()[:-3])
             
             
     def setCurProject(self):
         config = configUpdater.Config()
         self.current_project = config.returnConfigProjectName()
-        self.project_name_title.setText(config.returnConfigProjectName())
+        self.project_name_title.setText(config.returnConfigProjectName()[:-3])
         
     def setWidget(self, widget):
         self.widget = widget
