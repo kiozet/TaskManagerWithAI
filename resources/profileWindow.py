@@ -20,7 +20,7 @@ class ProfileMainWindow(QFrame):
         
         try:
             self.usernameLabel.setText(username)
-            self.email_your_profile(email)
+            self.email_your_profile.setText(email)
             
         except Exception as ex:
             print(f"Error: {ex}")

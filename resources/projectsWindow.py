@@ -10,9 +10,12 @@ class ProjectsMainWindow(QFrame):
         self.widget = None
         self.profileBtn.clicked.connect(self.switchToProfilePage)
         self.taskManagerBtn.clicked.connect(self.switchToTaskManager)
+        self.add_button_projects.clicked.connect(self.addNewProject)
         
         self.projectsBtn.setStyleSheet('color: blue')
         
+        
+    def addNewProject(self):
         
     def setWidget(self, widget):
         self.widget = widget

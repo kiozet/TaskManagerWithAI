@@ -2,21 +2,21 @@ import sqlite3, os
 
 
 # Функция, которая создает новую бд для нового таска, а также таблицу для заголовка, описания, дату создания, дедлайн и состояния таска
-def projectInitialization(name: str, cursor: sqlite3.Cursor) -> bool:
-    newDatabase = open(f"{name}.db", "w+")
-    newDatabase.close()
-    connection = sqlite3.connect(f"{name}.db")
+def projectInitialization(name: str) -> bool:
+    connection = sqlite3.connect(f"projects/{name}.db")
+    cursor = connection.cursor()
+    
     try:
         """Create table func, args: connection: sqlite3.Connection, cursor: sqlite3.Cursor from your
         sqlite3 db"""
         cursor.execute(
-            """CREATE TABLE IF NOT EXISTS task(
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
+            """CREATE TABLE IF NOT EXISTS tasks(
         title TEXT,
         description TEXT,
         status TEXT,
         dateCreated TEXT,
-        deadline TEXT
+        deadline TEXT,
+        priority INTEGER
         )"""
         )
         connection.commit()
