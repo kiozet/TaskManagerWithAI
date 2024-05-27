@@ -17,7 +17,7 @@ class TaskWidget(QtWidgets.QWidget, taskWidget.Ui_TaskWidget):
         self.setupUi(self)
         self.id_task = id_task
         self.project_title = project_title
-        self.groupBox.setTitle(str(self.project_title[2::]))
+        self.groupBox.setTitle(str(self.project_title[:-3:]))
         self.pushButtonDelete.clicked.connect(self.DeleteWidget)
 
     def DeleteWidget(self):
@@ -54,7 +54,7 @@ class ProjectsMainWindow(QFrame):
     
     def DeleteWidget(self, id_task: int):
         widget = self.task_widgets.get(id_task)
-        project_title = self.task_widgets.get(project_title)
+        project_title = widget.groupBox.title() + '.db'
         
         if widget:
             self.projects_layout.removeWidget(widget)
