@@ -25,30 +25,26 @@ def projectInitialization(name: str, cursor: sqlite3.Cursor) -> bool:
     except Exception as ex:
         return False
 
+# allTasks INTEGER DEFAULT 0,
+# doneTasks INTEGER DEFAULT 0,
+# frozenTasks INTEGER DEFAULT 0
 
 # Функция, которая создаёт бд для юзеров, создает таблицу со значениями:
-def userDatabaseInitialization(cursor: sqlite3.Cursor) -> bool:
-    newDatabase = open("users.db", "w+")
-    newDatabase.close()
-    connection = sqlite3.connect("users.db")
+def userDatabaseInitialization() -> bool:
+    connection = sqlite3.connect("content/users.db")
+    cursor = connection.cursor()
+    
     try:
         cursor.execute(
             """CREATE TABLE IF NOT EXISTS users(
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            telegrammID TEXT,
             email TEXT NOT NULL,
             login TEXT NOT NULL,
-            password TEXT NOT NULL,
-            name TEXT NOT NULL,
-            surname TEXT,
-            photo BLOB,
-            allTasks INTEGER DEFAULT 0,
-            doneTasks INTEGER DEFAULT 0,
-            frozenTasks INTEGER DEFAULT 0
+            password TEXT NOT NULL,            
             )"""
         )
         connection.commit()
         cursor.close()
+        connection.close()
         return True
     except Exception as ex:
         return False
@@ -73,9 +69,10 @@ def taskDataInsert(
 
 # Функция, которая добавляет значения email, login, password в таблицу users при регистрации пользователя
 def registrationDataInsert(
-    email: str, login: str, password: str, cursor: sqlite3.Cursor
+    email: str, login: str, password: str
 ) -> bool:
-    connection = sqlite3.connect("users.db")
+    connection = sqlite3.connect("content/users.db")
+    cursor = connection.cursor()
     try:
         sqliteInsertWithParam = """INSERT INTO users (email, login, password) VALUES (?, ?, ?)
 """
@@ -85,6 +82,7 @@ def registrationDataInsert(
         cursor.close()
         return True
     except Exception as ex:
+        print(ex)
         return False
 
 
