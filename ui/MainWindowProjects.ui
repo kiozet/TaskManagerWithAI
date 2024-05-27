@@ -208,7 +208,7 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <layout class="QHBoxLayout" name="projects_layout">
+      <layout class="QHBoxLayout" name="pe">
        <item>
         <widget class="QLabel" name="your_projects_label">
          <property name="sizePolicy">
@@ -261,33 +261,7 @@
       </layout>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="projects_layout">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLabel{
-    border-radius: 4px;
-    border-style: outset;
-    border-width: 3px;
-    border-radius: 8px;
-    border-color: white;
-    padding: 2px;
-    background-color: rgb(230, 230, 238);
-}
-</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <layout class="QVBoxLayout" name="projects_layout"/>
      </item>
     </layout>
    </item>
