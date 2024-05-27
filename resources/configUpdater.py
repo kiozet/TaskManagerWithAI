@@ -9,6 +9,7 @@ class Config:
         db_path = "content/users.db"
         self.db_state = False
         
+        
         if os.path.isfile(db_path):
             self.db_state = True
         

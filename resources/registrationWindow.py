@@ -79,6 +79,11 @@ class RegistrationWindow(QFrame):
         if resources.vadlidationFunc.emailValidation(email):
             userDatabaseInitialization()
             registrationDataInsert(email=email, login=userName, password=password)
+            
+            with open('content/config.cfg', 'w') as config:
+                config.write(f"Username:{userName}\nemail:{email}\n")
+                config.close()
+                
             self.widget.setCurrentIndex(2)
             
         
