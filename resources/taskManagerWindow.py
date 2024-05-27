@@ -30,7 +30,7 @@ class TaskMainWindow(QFrame):
             
             try:
                 self.project_name_title.setText(config.returnConfigProjectName()[:-3])
-                
+                # читаете бдшку и заполняете тасками по статусу
             except:
                 pass
             
