@@ -12,13 +12,13 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_TaskWidget(object):
     def setupUi(self, TaskWidget):
         TaskWidget.setObjectName("TaskWidget")
-        TaskWidget.resize(442, 118)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Minimum)
+        TaskWidget.resize(200, 118)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(TaskWidget.sizePolicy().hasHeightForWidth())
         TaskWidget.setSizePolicy(sizePolicy)
-        TaskWidget.setMinimumSize(QtCore.QSize(0, 0))
+        TaskWidget.setMinimumSize(QtCore.QSize(200, 0))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
