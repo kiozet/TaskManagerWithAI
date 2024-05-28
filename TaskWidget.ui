@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>200</width>
-    <height>118</height>
+    <width>514</width>
+    <height>199</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -55,11 +55,12 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QLineEdit" name="lineEdit">
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>NameTask</string>
         </property>
        </widget>
       </item>
@@ -76,13 +77,6 @@
          <widget class="QPushButton" name="pushButtonChoose">
           <property name="text">
            <string>Priortey</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButtonData">
-          <property name="text">
-           <string>Data</string>
           </property>
          </widget>
         </item>
