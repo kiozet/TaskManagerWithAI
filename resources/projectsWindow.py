@@ -6,6 +6,7 @@ from PyQt6.QtWidgets import QVBoxLayout, QWidget, QGroupBox
 
 import resources.taskWidget as taskWidget
 import resources.configUpdater as configUpdater
+import resources.database_helper as db
 
 import sqlite3
 
@@ -77,7 +78,7 @@ class ProjectsMainWindow(QFrame):
             os.remove(f'projects/{project_title}')
             
     def addNewProject(self):
-        sqlite3.connect(f"projects/{str(self.cur_ind_proj + 1)}.db") # init projectInitialization
+        db.projectInitialization(f"{str(self.cur_ind_proj + 1)}")
         self.setProjectList()
         
     def setWidget(self, widget):

@@ -52,6 +52,16 @@ def userDatabaseInitialization() -> bool:
         return False
 
 
+def readTasks(project: str):
+    connection = sqlite3.connect(f'projects/{project}')
+    cursor = connection.cursor()
+    
+    cursor.execute('SELECT * FROM tasks')
+    tasks = cursor.fetchall()
+
+    for task in tasks: print(task)
+    connection.close()
+
 # Функция, которая добавляет данные о таски в таблицу, такие как: заголовок, описание, дата создания, статус, дедлайн. По умолчанию состояние таска стоит на "onProggress"
 def taskDataInsert(
     title: str, desription: str, dateCreated: str, deadline: str, cursor: sqlite3.Cursor
