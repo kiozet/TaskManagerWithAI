@@ -21,7 +21,7 @@ class Worker(QRunnable):
 
     @pyqtSlot()
     def run(self):
-
+        
         taskTitle = self.addTaskWindow.taskName.text()
 
         authorization = "Mjk0MmQ0MmUtNTYyYy00NmY3LTlkYTctYTJhMzIyNmE5MTdhOmJkZTY5ZGE4LTMyZWUtNGNhZC1hNGNmLWIyYTc3NGI4Y2NhMg=="
