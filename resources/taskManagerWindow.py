@@ -12,11 +12,16 @@ import resources.tasksWidget as taskWidget
 import resources.database_helper as db
 
 
+count_button = 0
+count_task_done = 0
+count_task_frozen = 0
+
+
 class TaskWidget(QtWidgets.QWidget, taskWidget.Ui_TaskWidget):
 
     delete = pyqtSignal(int)
     choose = pyqtSignal(int)
-    transfer = pyqtSignal(int)
+    transfer = pyqtSignal(int, int, int, int)
 
     def __init__(self, id_task: int):
         super().__init__()
@@ -34,6 +39,8 @@ class TaskWidget(QtWidgets.QWidget, taskWidget.Ui_TaskWidget):
         self.choose.emit(self.id_task)
 
     def TransferWidget(self):
+        global count_button
+        count_button += 1
         self.transfer.emit(self.id_task)
 
 
@@ -74,7 +81,17 @@ class TaskMainWindow(QFrame):
             self.current_project = config.returnConfigProjectName()
             self.project_name_title.setText(config.returnConfigProjectName()[:-3])
 
-            db.readTasks(self.current_project)
+            data = db.readTasks(self.current_project)
+
+            for task in data:
+                title = task[0]
+                descr = task[1]
+                status = task[2]
+                date = task[3]
+                dline = task[4]
+                prior = task[5]
+
+                print(title, descr, status, date, dline, prior)
 
         else:
             pass
@@ -83,7 +100,7 @@ class TaskMainWindow(QFrame):
         self.widget = widget
 
     def AddTaskWidget(self):
-        self.taskManagerWindow = AddTaskWindow()
+        self.taskManagerWindow = AddTaskWindow(self.current_project)
         self.taskManagerWindow.show()
 
     def switchToProfileWindow(self):

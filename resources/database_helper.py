@@ -5,7 +5,7 @@ import sqlite3, os
 def projectInitialization(name: str) -> bool:
     connection = sqlite3.connect(f"projects/{name}.db")
     cursor = connection.cursor()
-    
+
     try:
         """Create table func, args: connection: sqlite3.Connection, cursor: sqlite3.Cursor from your
         sqlite3 db"""
@@ -25,15 +25,17 @@ def projectInitialization(name: str) -> bool:
     except Exception as ex:
         return False
 
+
 # allTasks INTEGER DEFAULT 0,
 # doneTasks INTEGER DEFAULT 0,
 # frozenTasks INTEGER DEFAULT 0
+
 
 # Функция, которая создаёт бд для юзеров, создает таблицу со значениями:
 def userDatabaseInitialization() -> bool:
     connection = sqlite3.connect("content/users.db")
     cursor = connection.cursor()
-    
+
     try:
         cursor.execute(
             """CREATE TABLE IF NOT EXISTS users(
@@ -46,58 +48,61 @@ def userDatabaseInitialization() -> bool:
         cursor.close()
         connection.close()
         return True
-    
+
     except Exception as ex:
         print(f"Rised error: {ex}!")
         return False
 
 
 def readTasks(project: str):
-    connection = sqlite3.connect(f'projects/{project}')
+    connection = sqlite3.connect(f"projects/{project}")
     cursor = connection.cursor()
-    
-    cursor.execute('SELECT * FROM tasks')
+
+    cursor.execute("SELECT * FROM tasks")
     tasks = cursor.fetchall()
 
-    for task in tasks: print(task)
+    return tasks
+
     connection.close()
+
+    return tasks
+
 
 # Функция, которая добавляет данные о таски в таблицу, такие как: заголовок, описание, дата создания, статус, дедлайн. По умолчанию состояние таска стоит на "onProggress"
 def taskDataInsert(
-    title: str, desription: str, dateCreated: str, deadline: str, cursor: sqlite3.Cursor
+    title: str, desription: str, status: str, deadline: str, project: str
 ) -> bool:
     try:
-        connection = sqlite3.connect("project.db")
-        sqliteInsertWithParam = """INSERT INTO tasks (title, description, status, dateCreated, deadline, priority) VALUES (?, ?, onProggress, ?, ?)
+        connection = sqlite3.connect(f"projects/{project}")
+        cursor = connection.cursor()
+        sqliteInsertWithParam = """INSERT INTO tasks (title, description, status, deadline) VALUES (?, ?, ?, ?)
 """
-        dataTuple = (title, desription, dateCreated, deadline)
+        dataTuple = (title, desription, status, deadline)
         cursor.execute(sqliteInsertWithParam, dataTuple)
         connection.commit()
         cursor.close()
         return True
     except Exception as ex:
-        return False
+        print(ex)
 
 
 # Функция, которая добавляет значения email, login, password в таблицу users при регистрации пользователя
-def registrationDataInsert(
-    email: str, login: str, password: str
-) -> bool:
+def registrationDataInsert(email: str, login: str, password: str) -> bool:
     connection = sqlite3.connect("content/users.db")
     cursor = connection.cursor()
     try:
         cursor.execute(
-                    "INSERT INTO users (email, login, password) VALUES (?, ?, ?)",
-                    (
-                        email,
-                        login,
-                        password,
-                    ),
-                )
+            "INSERT INTO users (email, login, password) VALUES (?, ?, ?)",
+            (
+                email,
+                login,
+                password,
+            ),
+        )
         connection.commit()
         connection.close()
         return True
-    
+
     except Exception as ex:
         print(ex)
         return False
