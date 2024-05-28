@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>927</width>
-    <height>516</height>
+    <width>904</width>
+    <height>330</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,6 +18,12 @@
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>904</width>
+    <height>330</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Frame</string>
@@ -114,6 +120,19 @@
       </widget>
      </item>
     </layout>
+   </item>
+   <item>
+    <widget class="QCalendarWidget" name="calendarWidget">
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>
