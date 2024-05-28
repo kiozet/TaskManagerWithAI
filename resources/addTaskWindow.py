@@ -9,51 +9,53 @@ import time
 import resources.api as api
 import os
 
-answer = ''
+answer = ""
+
 
 class WorkerTwo(QRunnable):
     def __init__(self, task_title) -> None:
         super().__init__()
         self.task_title = task_title
-        
-        
+
     @pyqtSlot()
     def run(self):
         # answer = os.system("python resources/api.py")
         global answer
         answer = api.GeneratingPoints(self.task_title)
-        self.stop()
+        print(answer)
+        # self.stop()
 
-        
-        
-        
+
 class Worker(QRunnable):
     def __init__(self, addTaskWindow) -> None:
         super().__init__()
-        
+
         self.addTaskWindow = addTaskWindow
-        
-    '''
+
+    """
     Worker thread
-    '''
+    """
 
     @pyqtSlot()
     def run(self):
         global answer
-        
+
         taskTitle = self.addTaskWindow.taskName.text()
-        
+
         self.threadpool = QThreadPool()
 
         workerTwo = WorkerTwo(taskTitle)
+        self.threadpool.start(workerTwo)
         gen = True
-        
+
         while gen:
             generatedContent = answer
             # print(generatedContent)
-            if answer == '': pass
-            else: gen = False
-        
+            if answer == "":
+                pass
+            else:
+                gen = False
+
         animatingContent = ""
 
         for charIndex in range(0, len(generatedContent)):
@@ -61,23 +63,23 @@ class Worker(QRunnable):
             self.addTaskWindow.taskContent.setText(animatingContent)
             QtCore.QCoreApplication.processEvents()
             time.sleep(0.05)
-        
+
 
 class AddTaskWindow(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi('ui/GenerationTaskWindow.ui', self)
-        
+        uic.loadUi("ui/GenerationTaskWindow.ui", self)
+
         self.generateBtn.clicked.connect(self.AddTitleTask)
         self.threadpool = QThreadPool()
-        
-     
+
     def AddTitleTask(self):
-            worker = Worker(self)
-            self.threadpool.start(worker)
-            
-# class API(QRunnable):  
-#     @pyqtSlot()        
+        worker = Worker(self)
+        self.threadpool.start(worker)
+
+
+# class API(QRunnable):
+#     @pyqtSlot()
 #     def GeneratingPoints(title_task: str) -> str:
 #         authorization = "Mjk0MmQ0MmUtNTYyYy00NmY3LTlkYTctYTJhMzIyNmE5MTdhOmJkZTY5ZGE4LTMyZWUtNGNhZC1hNGNmLWIyYTc3NGI4Y2NhMg=="
 #         giga = GigaChat(

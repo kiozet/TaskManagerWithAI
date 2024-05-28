@@ -1,2 +1,0 @@
-# TaskManagerWithAI
-OSource university project

@@ -1,6 +1,7 @@
 from langchain.schema import HumanMessage, SystemMessage
 from langchain.chat_models.gigachat import GigaChat
 
+
 def GeneratingPoints(title_task: str) -> str:
     authorization = "Mjk0MmQ0MmUtNTYyYy00NmY3LTlkYTctYTJhMzIyNmE5MTdhOmJkZTY5ZGE4LTMyZWUtNGNhZC1hNGNmLWIyYTc3NGI4Y2NhMg=="
     giga = GigaChat(
@@ -18,5 +19,6 @@ def GeneratingPoints(title_task: str) -> str:
     messages.append(HumanMessage(content=title_task))
     answer = giga(messages)
     messages.append(answer)
+    print(answer.content)
 
     return answer.content
