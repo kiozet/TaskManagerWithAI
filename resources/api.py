@@ -20,5 +20,3 @@ def GeneratingPoints(title_task: str) -> str:
     messages.append(answer)
 
     return answer.content
-
-GeneratingPoints(title_task=str(input()))
