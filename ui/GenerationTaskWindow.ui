@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>927</width>
-    <height>341</height>
+    <height>516</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,18 +18,6 @@
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>927</width>
-    <height>341</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>927</width>
-    <height>341</height>
-   </size>
   </property>
   <property name="windowTitle">
    <string>Frame</string>
@@ -58,18 +46,6 @@
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
-         <property name="minimumSize">
-          <size>
-           <width>400</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>400</width>
-           <height>30</height>
-          </size>
-         </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
     border-radius: 4px;
@@ -87,22 +63,10 @@
        <item>
         <widget class="QPushButton" name="generateBtn">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>118</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>132</width>
-           <height>16777215</height>
-          </size>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
@@ -130,22 +94,10 @@
         <bool>true</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>540</width>
-         <height>280</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>540</width>
-         <height>280</height>
-        </size>
        </property>
        <property name="styleSheet">
         <string notr="true">QTextBrowser{
@@ -162,67 +114,6 @@
       </widget>
      </item>
     </layout>
-   </item>
-   <item>
-    <widget class="QSpinBox" name="spinBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>24</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QSpinBox{
-    border-radius: 4px;
-    border-style: outset;
-    border-width: 3px;
-    border-radius: 8px;
-    border-color: white;
-    padding: 2px;
-    background-color: rgb(230, 230, 238);
-}
-</string>
-     </property>
-     <property name="minimum">
-      <number>1</number>
-     </property>
-     <property name="maximum">
-      <number>5</number>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="QCalendarWidget" name="calendarWidget">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>300</width>
-       <height>300</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>300</width>
-       <height>300</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QWidget
-{
-    background-color: white;
-}</string>
-     </property>
-    </widget>
    </item>
   </layout>
  </widget>
