@@ -3,7 +3,7 @@ from langchain.chat_models.gigachat import GigaChat
 
 
 def GeneratingPoints(title_task: str) -> str:
-    authorization = "Mjk0MmQ0MmUtNTYyYy00NmY3LTlkYTctYTJhMzIyNmE5MTdhOmJkZTY5ZGE4LTMyZWUtNGNhZC1hNGNmLWIyYTc3NGI4Y2NhMg=="
+    authorization = ""
     print(1)
     giga = GigaChat(
         credentials=authorization, model="GigaChat:latest", verify_ssl_certs=False
