@@ -14,7 +14,7 @@ import subprocess
 
 def GeneratingPoints(title_task: str) -> str:
     print(123)
-    authorization = "Mjk0MmQ0MmUtNTYyYy00NmY3LTlkYTctYTJhMzIyNmE5MTdhOmJkZTY5ZGE4LTMyZWUtNGNhZC1hNGNmLWIyYTc3NGI4Y2NhMg=="
+    authorization = ""
     giga = GigaChat(
         credentials=authorization, model="GigaChat:latest", verify_ssl_certs=False
     )
